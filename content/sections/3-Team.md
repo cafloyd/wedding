@@ -6,8 +6,8 @@ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, l
 teamMember: [
   {
     imageFileName: "team/1.jpg",
-    header: "Kay Garland",
-    subheader: "Lead Designer",
+    header: "Caitlin Floyd",
+    subheader: "Organization freak",
     social: {
       twitter: "#",
       facebook: "#",
@@ -16,8 +16,8 @@ teamMember: [
   },
   {
     imageFileName: "team/2.jpg",
-    header: "Larry Parker",
-    subheader: "Lead Marketer",
+    header: "Justin Vazquez",
+    subheader: "Large child",
     social: {
       twitter: "#",
       facebook: "#",
@@ -26,8 +26,8 @@ teamMember: [
   },
   {
     imageFileName: "team/3.jpg",
-    header: "Diana Pertersen",
-    subheader: "Lead Developer",
+    header: "Tanuki Flazquez",
+    subheader: "Very good girl",
     social: {
       twitter: "#",
       facebook: "#",
