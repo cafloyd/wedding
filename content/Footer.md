@@ -1,5 +1,5 @@
 ---
-copyright: "Copyright © Start Bootstrap 2020"
+copyright: "© Caitlin Floyd, 2020"
 social: {
   twitter: "#",
   facebook: "#",

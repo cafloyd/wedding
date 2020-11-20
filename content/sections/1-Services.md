@@ -1,6 +1,6 @@
 ---
-anchor: "Services"
-header: "Services"
+anchor: "Message"
+header: "Dear Loved Ones,"
 subheader: "Lorem ipsum dolor sit amet consectetur."
 services: [
   {

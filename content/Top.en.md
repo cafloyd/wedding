@@ -1,7 +1,7 @@
 ---
-header: "It's Nice To Meet You"
-subheader: "Welcome To Our Studio!"
+header: "Caitlin & Justin"
+subheader: "We're getting married!"
 imageFileName: "header-bg.jpg"
-jumpToAnchor: "Services"
-jumpToAnchorText: "Tell Me More"
+jumpToAnchor: "Ceremony"
+jumpToAnchorText: "Watch the Ceremony!"
 ---

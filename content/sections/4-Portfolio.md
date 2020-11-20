@@ -1,7 +1,7 @@
 ---
-anchor: "Portfolio"
-header: "Portfolio"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+anchor: "Ceremony"
+header: "Ceremony"
+subheader: "We hope you can join us, whether live at the time of the event, or afterwards."
 portfolios: [
   {
     imageFileName: "portfolio/01-thumbnail.jpg",

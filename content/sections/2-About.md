@@ -1,6 +1,6 @@
 ---
-anchor: "About"
-header: "About"
+anchor: "Our Story"
+header: "Our Story So Far"
 subheader: "Lorem ipsum dolor sit amet consectetur."
 timeline: [
   {
