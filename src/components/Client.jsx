@@ -1,31 +1,32 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 import Image from "components/Image";
 
-const Client = ({ imageFileName, href }) => {
+const Client = () => {
   const imgPart = (
-    <Image className="img-fluid d-block mx-auto" fileName={imageFileName} alt={imageFileName} />
+   <iframe 
+   style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '50vh'}}
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/S1IPBRd84ws" 
+    title="ceremony" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen />
   );
-
-  if (href) {
-    return (
-      <a href={href} target="_blank" rel="noopener noreferrer">
-        {imgPart}
-      </a>
-    );
-  }
 
   return imgPart;
 };
 
-Client.propTypes = {
-  imageFileName: PropTypes.string.isRequired,
-  href: PropTypes.string,
-};
+// Client.propTypes = {
+//   // imageFileName: PropTypes.string.isRequired,
+//   // href: PropTypes.string,
+//   videoEmbed: PropTypes.string.isRequired
+// };
 
-Client.defaultProps = {
-  href: null,
-};
+// Client.defaultProps = {
+//   href: null,
+// };
 
 export default Client;
