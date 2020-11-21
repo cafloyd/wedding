@@ -1,7 +1,7 @@
 ---
-# anchor: "Ceremony"
+anchor: "Ceremony"
 header: "Ceremony"
-subheader: "We hope you can join us, whether live at the time of the event, or afterwards."
+subheader: "We hope you can join us!"
 portfolios: [
   {
     imageFileName: "portfolio/01-thumbnail.jpg",

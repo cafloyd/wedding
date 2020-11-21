@@ -1,7 +1,7 @@
 ---
 anchor: "Message"
 header: "Dear Loved Ones,"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: ""
 services: [
   {
     iconName: "ShoppingCartIcon",
