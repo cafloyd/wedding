@@ -35,15 +35,21 @@ const Portfolio = ({ className, frontmatter }) => {
         <Col lg={8} className="text-center">
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
-          <p className="text-muted mb-5">{subheader}</p>
+          {/* <p className="text-muted mb-5">{subheader}</p> */}
+          <p className="text-muted mb-5">
+            <Countdown
+              date='2020-12-13T14:00:00-05:00'
+              renderer={renderer}
+            />
+        </p>
         </Col>
       </Row>
-      <Row>
+      {/* <Row>
         <Countdown
           date='2020-12-13T14:00:00-05:00'
           renderer={renderer}
         />
-      </Row>
+      </Row> */}
       <div />
       <Row>
             <div
