@@ -28,19 +28,19 @@ timeline: [
     content: "The first international border we crossed together was Canadian. We've been back to visit Toronto and Niagara Falls since then, and also made it to England and Japan."
   },
   {
-    imageFileName: "about/1.jpg",
+    imageFileName: "about/5.jpg",
     header: "July 2019",
     subheader: "Reunited",
     content: "After fifteen months of navigating a long-distance relationship, we were finally reunited when Caitlin relocated to Sleepy Hollow, NY."
   },
   {
-    imageFileName: "about/2.jpg",
+    imageFileName: "about/6.png",
     header: "July 18, 2020",
     subheader: "Our family grows",
     content: "After relocating to the Maryland suburbs of DC, we adopted the best puppy in the universe, Tanuki, from a shelter in Caitlin's hometown of Waldorf."
   },
     {
-    imageFileName: "about/3.jpg",
+    imageFileName: "about/7.png",
     header: "October 1, 2020",
     subheader: "We get engaged",
     content: "As we picnicked in Washington Square Park, blocks away from where we first met in Philadelphia, Justin popped the question as Caitlin obvliviously cracked jokes before finally realizing what what going on."
