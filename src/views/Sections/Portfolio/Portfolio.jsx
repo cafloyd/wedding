@@ -1,10 +1,13 @@
 import React from "react";
+// import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
 import clsx from "clsx";
+import Countdown from 'react-countdown';
+
 
 import { Row, Col } from "react-bootstrap";
 // import SectionHeader from "components/SectionHeader";
-import PortfolioItem from "components/PortfolioItem";
+// import PortfolioItem from "components/PortfolioItem";
 import PageSection from "components/PageSection";
 import "./Portfolio.scss";
 
@@ -13,7 +16,18 @@ const Portfolio = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, portfolios } = frontmatter;
+  const { anchor, header, subheader } = frontmatter;
+
+  const Completionist = () => <span>You are good to go!</span>;
+      
+  const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return <Completionist />;
+    } 
+      // Render a countdown
+      return <span>{days} days, {hours} hours, {minutes} minutes, and {seconds} seconds to go!</span>;
+  };
 
   return (
     <PageSection className={clsx("portfolio-section", className)} id={anchor}>
@@ -24,6 +38,13 @@ const Portfolio = ({ className, frontmatter }) => {
           <p className="text-muted mb-5">{subheader}</p>
         </Col>
       </Row>
+      <Row>
+        <Countdown
+          date='2020-12-13T14:00:00-05:00'
+          renderer={renderer}
+        />
+      </Row>
+      <div />
       <Row>
             <div
           className="videoWrapper"
@@ -45,27 +66,6 @@ const Portfolio = ({ className, frontmatter }) => {
             />
         </div>
       </Row>
-      {/* <Row>
-        {portfolios.map(
-          ({ content, extraInfo, header, imageFileName, imageFileNameDetail, subheader }) => (
-            <PortfolioItem
-              key={header}
-              imageFileName={imageFileName}
-              header={header}
-              subheader={subheader}
-              content={content}
-              imageFileNameDetail={imageFileNameDetail}
-              extraInfo={
-                <ul>
-                  {extraInfo.map((ei) => (
-                    <li key={ei}>{ei}</li>
-                  ))}
-                </ul>
-              }
-            />
-          ),
-        )}
-      </Row> */}
     </PageSection>
   );
 };
