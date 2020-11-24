@@ -54,18 +54,14 @@ const Portfolio = ({ className, frontmatter }) => {
       <Row>
         <div
           className="videoWrapper"
-          // paddingBottom="50%"
-          // width="100%"
         >
           <iframe 
-            // style= {{display: 'flex',  justifyContent:'center', alignItems:'center', height: '50vh'}}
-            // width="100%" 
             width="560" 
-            // height="100%" 
             height="349" 
-            // position="absolute"
+            
             src="https://www.youtube.com/embed/S1IPBRd84ws" 
             title="ceremony" 
+            className="video"
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen
