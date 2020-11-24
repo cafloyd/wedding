@@ -1,7 +1,7 @@
 ---
 anchor: "Ceremony"
 header: "Ceremony"
-subheader: "We hope you can join us!"
+subheader: "December 13, 2020 2pm EST"
 portfolios: [
   {
     imageFileName: "portfolio/01-thumbnail.jpg",

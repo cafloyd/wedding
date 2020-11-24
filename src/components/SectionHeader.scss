@@ -3,6 +3,7 @@
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
+    @include script-font;
   }
   h3.section-subheading {
     font-size: 16px;
@@ -11,5 +12,10 @@
     margin-bottom: 75px;
     text-transform: none;
     @include serif-font;
+  }
+}
+@media (min-width: 768px) {
+  h2.section-heading {
+    font-size: 60px;
   }
 }
