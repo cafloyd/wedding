@@ -6,7 +6,7 @@ import Countdown from 'react-countdown';
 
 
 import { Row, Col } from "react-bootstrap";
-// import SectionHeader from "components/SectionHeader";
+import SectionHeader from "components/SectionHeader";
 // import PortfolioItem from "components/PortfolioItem";
 import PageSection from "components/PageSection";
 import "./Portfolio.scss";
@@ -32,24 +32,25 @@ const Portfolio = ({ className, frontmatter }) => {
   return (
     <PageSection className={clsx("portfolio-section", className)} id={anchor}>
       <Row className="justify-content-center">
-        <Col lg={8} className="text-center">
+        <SectionHeader header={header} subheader={subheader}/>
+        {/* <Col lg={8} className="text-center">
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
-          {/* <p className="text-muted mb-5">{subheader}</p> */}
-          <p className="text-muted mb-5">
+          <p className="text-muted mb-5">{subheader}</p>
+        </Col> */}
+          {/* <p className="text-muted mb-5">
             <Countdown
               date='2020-12-13T14:00:00-05:00'
               renderer={renderer}
             />
-        </p>
-        </Col>
+        </p> */}
       </Row>
-      {/* <Row>
+      <Row>
         <Countdown
           date='2020-12-13T14:00:00-05:00'
           renderer={renderer}
         />
-      </Row> */}
+      </Row>
       <div />
       <Row>
         <div

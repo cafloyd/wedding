@@ -12,7 +12,7 @@ const SectionHeader = ({ header, subheader, className, ...restProps }) => {
 
   return (
     <Col lg={12} className={clsx("section-header", "text-center", className)} {...restProps}>
-      <h2 className="section-heading text-uppercase">{header}</h2>
+      <h2 className="section-heading">{header}</h2>
       {subheaderPart}
     </Col>
   );
