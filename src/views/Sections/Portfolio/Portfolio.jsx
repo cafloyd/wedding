@@ -52,7 +52,7 @@ const Portfolio = ({ className, frontmatter }) => {
       </Row> */}
       <div />
       <Row>
-            <div
+        <div
           className="videoWrapper"
           // paddingBottom="50%"
           // width="100%"
