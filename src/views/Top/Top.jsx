@@ -18,7 +18,10 @@ const Top = ({ frontmatter }) => {
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
       <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
-        {jumpToAnchorText}
+        <h5 className="buttonTitle">{jumpToAnchorText}</h5> <br />
+        <h6 className="buttonSubtitle">Dec. 13, 2pm EST</h6>
+        {/* <p className="buttonTitle">{jumpToAnchorText}</p> <br />
+        <p className="buttonSubtitle">Dec. 13, 2pm EST</p> */}
       </Button>
     );
   }
