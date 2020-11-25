@@ -8,22 +8,84 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom:50%;
+  padding-bottom: 50%;
   width: 100%;
 }
 .video {
   align-self: center;
-  // display: flex;  
-  // justify-content: center; 
+  // display: flex;
+  // justify-content: center;
   // position: absolute;
   width: 100vw;
-  // width: 100%; 
+  // width: 100%;
   // height: 100%
+}
+.countdownAndVideoDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.countdownWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  margin-top: 0px;
+  justify-content: center;
+}
+.countdownSection {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.countWrapper {
+  flex: 1;
+  border: 5px solid #dee2e6;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  color: #868e96;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+.count {
+  font-size: 50px;
+  @include script-font;
+}
+.unit {
+  justify-self: center;
+}
+.countdownEnd {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid #dee2e6;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  color: #868e96;
+  margin: 20px;
+  padding: 10px;
+}
+.videoWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.instaWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 50px;
+}
+.tanukiInsta {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
 }
 
 @media (min-width: 768px) {
   .video {
     height: 50vh;
-    width: 80vh
+    width: 80vh;
   }
 }
