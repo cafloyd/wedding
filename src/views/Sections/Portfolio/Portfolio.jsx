@@ -20,12 +20,58 @@ const Portfolio = ({ className, frontmatter }) => {
 
   const Completionist = () => {
     return (
-      <span>
+      <span className="finishedCountdown">
+        <SectionHeader className="finishedHeader" header="The ceremony will begin in"/>
+          <div className="countdownWrapper">
+            <div className="countdownSection">
+              <div className="countWrapper">
+                <div className="count">
+                  0 
+                </div>
+                <div className="unit">
+                  days
+                </div>
+              </div>
+              <div className="countWrapper">
+                <div className="count">
+                  0 
+                </div>
+                <div className="unit">
+                  hours
+                </div>
+              </div>
+            </div>
+            <div className="countdownSection">
+              <div className="countWrapper">
+                <div className="count">
+                  0 
+                </div>
+                <div className="unit">
+                  minutes
+                </div>
+              </div>
+              <div className="countWrapper">
+                <div className="count">
+                  0
+                </div>
+                <div className="unit">
+                  seconds
+                </div>
+              </div>
+            </div>
+          </div>
         <h3 className="countdownEnd">
-          Video is now streaming!
-
+          Ceremony is now live!
         </h3>
       </span>
+    )
+  }
+
+  const Soon = () => {
+    return (
+        <div className="startingSoon">
+          <h3>Video is now streaming!</h3>
+        </div>
     )
   }
       
@@ -34,8 +80,52 @@ const Portfolio = ({ className, frontmatter }) => {
       // Render a completed state
       return <Completionist />;
     } 
-      // Render a countdown
-      return <span>
+    if ((days === 0 && hours === 0 && minutes === 10 && seconds === 0) || (days === 0 && hours === 0 && minutes < 10)) {
+      return <div>
+        <SectionHeader header="The ceremony will begin in"/>
+        <div className="countdownWrapper">
+          <div className="countdownSection">
+            <div className="countWrapper">
+              <div className="count">
+                {days} 
+              </div>
+              <div className="unit">
+                days
+              </div>
+            </div>
+            <div className="countWrapper">
+              <div className="count">
+                {hours} 
+              </div>
+              <div className="unit">
+                hours
+              </div>
+            </div>
+          </div>
+          <div className="countdownSection">
+            <div className="countWrapper">
+              <div className="count">
+                {minutes} 
+              </div>
+              <div className="unit">
+                minutes
+              </div>
+            </div>
+            <div className="countWrapper">
+              <div className="count">
+                {seconds} 
+              </div>
+              <div className="unit">
+                seconds
+              </div>
+            </div>
+          </div>
+        </div>
+        <Soon />
+      </div>
+    }
+    // Render a countdown
+    return <span>
         <div className="countdownAndTanuki">
           <SectionHeader header="The ceremony will begin in"/>
           <div className="countdownWrapper">
@@ -103,6 +193,7 @@ const Portfolio = ({ className, frontmatter }) => {
         <Row>
           <Countdown
             date='2020-12-13T14:00:00-05:00'
+            // date='2020-11-27T18:38:00-05:00'
             renderer={renderer}
           />
         </Row>
