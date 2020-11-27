@@ -36,7 +36,6 @@
 .countdownSection {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
   align-content: stretch;
 }
 .countWrapper {
@@ -57,13 +56,32 @@
 .unit {
   justify-self: center;
 }
+.finishedCountdown {
+  .countWrapper {
+    border: #e9ecef;
+    color: #ced4da;
+  }
+  .finishedHeader {
+    color: #ced4da;
+  }
+}
 .countdownEnd {
   display: flex;
   flex-wrap: wrap;
-  border: 5px solid #dee2e6;
+  border: 5px solid #adb5bd;
   border-radius: 20px;
-  background-color: #f8f9fa;
-  color: #868e96;
+  background-color: #dee2e6;
+  color: #343a40;
+  margin: 20px;
+  padding: 10px;
+}
+.startingSoon {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid #adb5bd;
+  border-radius: 20px;
+  background-color: #dee2e6;
+  color: #343a40;
   margin: 20px;
   padding: 10px;
 }
