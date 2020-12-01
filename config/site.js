@@ -1,17 +1,11 @@
 module.exports = {
-  title: "Gatsyby Startbootstrap Agency",
+  title: "Caitlin & Justin",
   keywords: [
-    "gatsby",
-    "gatsbyjs",
-    "landing page",
-    "landing",
-    "i18n",
-    "eslint",
-    "bootstrap",
-    "startbootstrap-agency",
+    "Caitlin Floyd",
+    "Justin Vazquez"
   ],
-  description: "gatsby version of startbootstrap-agency with i18n support.",
-  author: "thundermiracle",
+  description: "Wedding website of Caitlin Floyd and Justin Vazquez",
+  author: "Caitlin Floyd",
   trackingId: "UA-119418003-5",
   defaultLang: "en",
   // langTextMap: {
