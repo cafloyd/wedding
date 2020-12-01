@@ -13,29 +13,21 @@ const Contact = ({ className, frontmatter }) => {
   const { anchor, header, subheader, telephone, email } = frontmatter;
 
   return (
-    <PageSection className={className} id={anchor}>
-      <Row className="justify-content-center">
-        <Col lg={8} className="text-center">
-          <h2 className="mt-0">{header}</h2>
-          <hr className="divider my-4" />
-          <p className="text-muted mb-5">{subheader}</p>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={4} className="ml-auto text-center">
-          <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
-          <a className="d-block" href={`tel:${telephone}`}>
-            {telephone}
-          </a>
-        </Col>
-        <Col lg={4} className="mr-auto text-center">
-          <Icon iconName="EnvelopIcon" size="3x" className="text-muted mb-3" />
-          <a className="d-block" href={`mailto:${email}`}>
-            {email}
-          </a>
-        </Col>
-      </Row>
-    </PageSection>
+    // <PageSection className={className} id={anchor}>
+    //   <Row className="justify-content-center">
+    //     <Col lg={8} className="text-center">
+    //       <h2 className="mt-0">{header}</h2>
+    //       <hr className="divider my-4" />
+    //       <p className="text-muted mb-5">{subheader}</p>
+    //     </Col>
+    //   </Row>
+    //   <Row>
+    //     <h1>I am before the guestbook</h1>
+    //     <script src="http://apps.bravenet.com/go.js?service=guestbook;id=1;usernum=1064629057" type="text/javascript" charset="utf-8" width="100%" />
+    //     <h1>I am after the guestbook</h1>
+    //   </Row>
+    // </PageSection>
+    <div />
   );
 };
 

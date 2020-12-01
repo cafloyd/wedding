@@ -1,9 +1,9 @@
 ---
 copyright: "© Caitlin Floyd, 2020"
 social: {
-  twitter: "#",
-  facebook: "#",
-  medium: "#"
+  # twitter: "#",
+  # facebook: "#",
+  # medium: "#"
 }
 privacyText: "Privacy Policy"
 privacyHref: "#!"
