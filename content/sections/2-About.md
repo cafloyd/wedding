@@ -1,13 +1,13 @@
 ---
 anchor: "Our Story"
 header: "Our Story So Far"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: "Catch up as we begin the next chapter!"
 timeline: [
   {
     imageFileName: "about/1.jpg",
     header: "Sept. 30, 2017",
     subheader: "We first meet",
-    content: "In Old City, Philadelphia, Caitlin successfully convinced Justin that she knew anything at all about beer, and impressed him by ordering a pumpkin ale. (She secretly hated it as soon as she tried it.) After dinner, we ended up walking to the other end of the city in search of cocktails."
+    content: "In Old City, Philadelphia, Caitlin successfully convinced Justin that she knew anything at all about beer, and impressed him by ordering a pumpkin ale. (She secretly hated it as soon as she tried it.) After dinner, we walked to the other end of the city in search of cocktails."
   },
   {
     imageFileName: "about/2.jpg",
@@ -19,19 +19,19 @@ timeline: [
     imageFileName: "about/3.jpg",
     header: "July 2018",
     subheader: "Our first trip",
-    content: "We took a roadtrip up the Blue Ridge Parkway, from Chattanooga, TN to Philadelphia to do some hiking, take in the views, and visit some friends and family. Along the way, we stopped in Asheville, Roanoke, Charlottesville, Richmond, Williamsburg, and Alexandria. "
+    content: "We took a roadtrip up the Blue Ridge Parkway, from Chattanooga, TN to Philadelphia, stopping in Asheville, Roanoke, Charlottesville, Richmond, Williamsburg, and Alexandria along the way. We did some hiking, took in the views, and visited some friends and family."
   },
   {
     imageFileName: "about/4.jpg",
     header: "August, 2018",
     subheader: "We go international",
-    content: "The first international border we crossed together was Canadian. We've been back to visit Toronto and Niagara Falls since then, and also made it to England and Japan."
+    content: "The first international border we crossed together was Canadian, and we absolutely did not begin the trip with an emergency situation involving Caitlin realizing in Buffalo that she had forgotten her passport in Philly. We've been back to visit Toronto and Niagara Falls since then, and have also made it to England and Japan."
   },
   {
     imageFileName: "about/5.jpg",
     header: "July 2019",
     subheader: "Reunited",
-    content: "After fifteen months of navigating a long-distance relationship, we were finally reunited when Caitlin relocated to Sleepy Hollow, NY."
+    content: "After fifteen months of navigating a long-distance relationship, we were finally reunited when Caitlin relocated to Sleepy Hollow, NY. Without the need to travel every weekend, Justin finally had time to nerd out and play D&D."
   },
   {
     imageFileName: "about/6.png",
