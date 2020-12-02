@@ -13,8 +13,12 @@ const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extr
       <Card.ImgOverlay className="no-padding">
         <Container>
           <div className="intro-text">
-            <div className="intro-heading">{header}</div>
-            <div className="intro-lead-in">{subheader}</div>
+            <div className="intro-text-no-button">
+              <div className="intro-heading">{header}</div>
+              <div className="intro-lead-in text-uppercase">{subheader}</div>
+              <div className="date text-uppercase">Dec. 13, 2020</div>
+            </div>
+            <br />
             {extraInfo}
           </div>
         </Container>

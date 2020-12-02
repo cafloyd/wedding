@@ -17,17 +17,9 @@ const Top = ({ frontmatter }) => {
   let extraInfoPart;
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <div className="buttonsWrapper">
-        <Button size="xl" variant="primary" className="text-uppercase main-button" onClick={scrollToSection}>
-          <p className="buttonTitle">Watch the Ceremony</p> <br />
-          <p className="buttonSubtitle">Dec. 13, 2pm EST</p>
-          {/* <p className="buttonTitle">{jumpToAnchorText}</p> <br />
-          <p className="buttonSubtitle">Dec. 13, 2pm EST</p> */}
-        </Button>
-        {/* <Button size="xl" variant="primary" className="text-uppercase main-button" onClick={scrollToSection}>
-          <p className="buttonTitle">Sign our Virtual Guestbook</p> 
-        </Button> */}
-      </div>
+      <Button size="xl" variant="primary" className="text-uppercase main-button" onClick={scrollToSection}>
+        <p className="buttonTitle">Watch the Ceremony</p>
+      </Button>
     );
   }
 

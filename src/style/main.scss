@@ -59,6 +59,7 @@ img::-moz-selection {
 
 .btn-xl {
   font-size: 18px;
+  line-height: 18px;
   padding: 10px 35px;
 }
 
@@ -82,8 +83,10 @@ img::-moz-selection {
 @media (max-width: 768px) {
   .btn-xl {
     font-size: 8px;
+    line-height: 8px;
     padding: 10px 30px;
     .buttonTitle {
+      margin: auto;
       font-size: 14px;
     }
     .buttonSubtitle {
