@@ -17,12 +17,17 @@ const Top = ({ frontmatter }) => {
   let extraInfoPart;
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
-        <h5 className="buttonTitle">{jumpToAnchorText}</h5> <br />
-        <h6 className="buttonSubtitle">Dec. 13, 2pm EST</h6>
-        {/* <p className="buttonTitle">{jumpToAnchorText}</p> <br />
-        <p className="buttonSubtitle">Dec. 13, 2pm EST</p> */}
-      </Button>
+      <div className="buttonsWrapper">
+        <Button size="xl" variant="primary" className="text-uppercase main-button" onClick={scrollToSection}>
+          <p className="buttonTitle">Watch the Ceremony</p> <br />
+          <p className="buttonSubtitle">Dec. 13, 2pm EST</p>
+          {/* <p className="buttonTitle">{jumpToAnchorText}</p> <br />
+          <p className="buttonSubtitle">Dec. 13, 2pm EST</p> */}
+        </Button>
+        {/* <Button size="xl" variant="primary" className="text-uppercase main-button" onClick={scrollToSection}>
+          <p className="buttonTitle">Sign our Virtual Guestbook</p> 
+        </Button> */}
+      </div>
     );
   }
 
