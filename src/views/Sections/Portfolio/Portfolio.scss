@@ -49,18 +49,14 @@
   width: 85px;
   justify-content: center;
   justify-items: center;
+  box-shadow: 20px, 20px, 20px, 0px, #9ebc9f;
 }
 .count {
   font-size: 40px;
   @include script-font;
-  // justify-content: center;
-  // justify-items: center;
   text-align: center;
 }
 .unit {
-  // justify-self: center;
-  // justify-content: center;
-  // justify-items: center;
   text-align: center;
   font-size: 16px;
 }
@@ -76,12 +72,17 @@
 .countdownEnd {
   display: flex;
   flex-wrap: wrap;
-  border: 5px solid #adb5bd;
+  // border: 5px solid #adb5bd;
+  border: 5px solid #dee2e6;
   border-radius: 20px;
-  background-color: #dee2e6;
-  color: #343a40;
+  background-color: #f8f9fa;
+  // color: #343a40;
+  color: #9ebc9f;
+  font-size: 20px;
   margin: 20px;
   padding: 10px;
+  text-align: center;
+  box-shadow: 5px, 5px, 5px, 0px, #868e96;
 }
 .startingSoon {
   display: flex;
@@ -104,9 +105,12 @@
   justify-content: flex-end;
   margin: 50px;
 }
-.tanukiInsta {
+.countdownLinks {
   margin-left: 0.25em;
-  margin-right: 0.25em;
+  // margin-right: 0.25em;
+}
+.checkOut {
+  text-align: center;
 }
 
 @media (min-width: 768px) {

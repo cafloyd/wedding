@@ -21,7 +21,9 @@ const Portfolio = ({ className, frontmatter }) => {
   const Completionist = () => {
     return (
       <span className="finishedCountdown">
-        <SectionHeader className="finishedHeader" header="The ceremony will begin in"/>
+        <div className="countdownIntro">
+            The ceremony is now live!
+          </div>
           <div className="countdownWrapper">
             <div className="countdownSection">
               <div className="countWrapper">
@@ -60,70 +62,49 @@ const Portfolio = ({ className, frontmatter }) => {
               </div>
             </div>
           </div>
-        <h3 className="countdownEnd">
-          Ceremony is now live!
-        </h3>
+        <p>
+          Music provided by
+          <a
+            href="http://cellobosco.com/"
+            className="countdownLinks"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Carol Anne Bosco
+          </a>
+        </p>
+        <p>
+          Officiated by 
+          <a 
+            href="https://elleweds.wixsite.com/elleweds"
+            className="countdownLinks"
+            target="_blank"
+            rel="noreferrer">
+              Elle is for Love
+          </a>
+        </p>
+        <p>
+          Stay tuned for photos by
+          <a
+            href="https://anaisabelphotography.com/"
+            className="countdownLinks"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ana Isabel Photography
+          </a>
+          !
+        </p>
       </span>
     )
   }
 
-  const Soon = () => {
-    return (
-        <div className="startingSoon">
-          <h3>Video is now streaming!</h3>
-        </div>
-    )
-  }
       
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
       return <Completionist />;
     } 
-    if ((days === 0 && hours === 0 && minutes === 10 && seconds === 0) || (days === 0 && hours === 0 && minutes < 10)) {
-      return <div>
-        <SectionHeader header="The ceremony will begin in"/>
-        <div className="countdownWrapper">
-          <div className="countdownSection">
-            <div className="countWrapper">
-              <div className="count">
-                {days} 
-              </div>
-              <div className="unit">
-                days
-              </div>
-            </div>
-            <div className="countWrapper">
-              <div className="count">
-                {hours} 
-              </div>
-              <div className="unit">
-                hours
-              </div>
-            </div>
-          </div>
-          <div className="countdownSection">
-            <div className="countWrapper">
-              <div className="count">
-                {minutes} 
-              </div>
-              <div className="unit">
-                minutes
-              </div>
-            </div>
-            <div className="countWrapper">
-              <div className="count">
-                {seconds} 
-              </div>
-              <div className="unit">
-                seconds
-              </div>
-            </div>
-          </div>
-        </div>
-        <Soon />
-      </div>
-    }
     // Render a countdown
     return <span>
         <div className="countdownAndTanuki">
@@ -169,11 +150,11 @@ const Portfolio = ({ className, frontmatter }) => {
             </div>
           </div>
           <div className="instaWrapper">
-            <p>
+            <p className="checkOut">
               Check out 
               <a 
                 href="https://www.instagram.com/princess_tanuki/"
-                className="tanukiInsta"
+                className="countdownLinks"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -195,7 +176,7 @@ const Portfolio = ({ className, frontmatter }) => {
         <Row>
           <Countdown
             date='2020-12-13T14:00:00-05:00'
-            // date='2020-11-29T20:42:00-05:00'
+            // date='2020-12-02T12:42:00-05:00'
             renderer={renderer}
           />
         </Row>
@@ -207,7 +188,7 @@ const Portfolio = ({ className, frontmatter }) => {
               width="560" 
               height="349" 
               
-              src="https://www.youtube.com/embed/S1IPBRd84ws" 
+              src="https://www.youtube.com/embed/EXOL-3JyXMI" 
               title="ceremony" 
               className="video"
               frameBorder="0" 
