@@ -17,7 +17,7 @@ timeline: [
   },
   {
     imageFileName: "about/3.jpg",
-    header: "July 2018",
+    header: "July, 2018",
     subheader: "Our first trip",
     content: "We took a roadtrip up the Blue Ridge Parkway, from Chattanooga, TN to Philadelphia, stopping in Asheville, Roanoke, Charlottesville, Richmond, Williamsburg, and Alexandria along the way. We did some hiking, took in the views, and visited some friends and family."
   },
@@ -29,7 +29,7 @@ timeline: [
   },
   {
     imageFileName: "about/5.jpg",
-    header: "July 2019",
+    header: "July, 2019",
     subheader: "Reunited",
     content: "After fifteen months of navigating a long-distance relationship, we were finally reunited when Caitlin relocated to Sleepy Hollow, NY. Without the need to travel every weekend, Justin finally had time to nerd out and play D&D."
   },

@@ -69,10 +69,15 @@
   }
 }
 .timeline-heading {
-  h4 {
+  .timelineHeader {
+    font-size: 26px;
+    font-weight: 200;
+  }
+  p {
     margin-top: 0;
     color: inherit;
-    &.subheading {
+    &.timelineSubheading {
+      font-size: 20px;
       text-transform: none;
     }
   }
