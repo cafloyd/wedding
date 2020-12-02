@@ -7,14 +7,13 @@
     padding: 0;
   }
   .intro-text {
-    padding-top: 100px;
+    padding-top: 75px;
     padding-bottom: 100px;
     .intro-lead-in {
       font-size: 22px;
-      font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
+      @include body-font;
     }
     .intro-heading {
       font-size: 50px;
@@ -32,14 +31,13 @@
       height: 759px;
     }
     .intro-text {
-      padding-top: 200px;
+      padding-top: 150px;
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
-        @include serif-font;
+        @include body-font
       }
       .intro-heading {
         font-size: 100px;
@@ -49,6 +47,13 @@
         @include script-font;
       }
     }
+    // .buttonsWrapper {
+    //   justify-content: space-evenly;
+    // }
+    // .main-button {
+    //   flex-basis: 30%;
+    //   margin: 10px;
+    // }
   }
 }
 .buttonTitle {
@@ -56,6 +61,17 @@
 }
 
 .buttonSubtitle {
-  margin-top: 0px;
-  font-weight: lighter;  
+  padding-top: 0px;
+  font-weight: lighter;
 }
+
+// .buttonsWrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+// }
+
+// .main-button {
+//   margin: 10px;
+//   flex-basis: 50%;
+// }
