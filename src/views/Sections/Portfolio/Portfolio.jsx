@@ -154,7 +154,7 @@ const Portfolio = ({ className, frontmatter }) => {
               Check out 
               <a 
                 href="https://www.instagram.com/princess_tanuki/"
-                className="countdownLinks"
+                className="spacedCountdownLinks"
                 target="_blank"
                 rel="noreferrer"
               >
