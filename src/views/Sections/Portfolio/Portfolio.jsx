@@ -127,7 +127,9 @@ const Portfolio = ({ className, frontmatter }) => {
     // Render a countdown
     return <span>
         <div className="countdownAndTanuki">
-          <SectionHeader header="The ceremony will begin in"/>
+          <div className="countdownIntro">
+            The ceremony will begin in
+          </div>
           <div className="countdownWrapper">
             <div className="countdownSection">
               <div className="countWrapper">
