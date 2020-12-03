@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import Countdown from 'react-countdown';
@@ -7,7 +6,6 @@ import Countdown from 'react-countdown';
 
 import { Row, Button } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
-// import PortfolioItem from "components/PortfolioItem";
 import PageSection from "components/PageSection";
 import "./Portfolio.scss";
 
@@ -24,44 +22,6 @@ const Portfolio = ({ className, frontmatter }) => {
         <div className="countdownIntro">
             The ceremony is now live!
           </div>
-          {/* <div className="countdownWrapper">
-            <div className="countdownSection">
-              <div className="countWrapper">
-                <div className="count">
-                  0 
-                </div>
-                <div className="unit">
-                  days
-                </div>
-              </div>
-              <div className="countWrapper">
-                <div className="count">
-                  0 
-                </div>
-                <div className="unit">
-                  hours
-                </div>
-              </div>
-            </div>
-            <div className="countdownSection">
-              <div className="countWrapper">
-                <div className="count">
-                  0 
-                </div>
-                <div className="unit">
-                  minutes
-                </div>
-              </div>
-              <div className="countWrapper">
-                <div className="count">
-                  0
-                </div>
-                <div className="unit">
-                  seconds
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="joinButtonWrapper">
             <div>
               <a
