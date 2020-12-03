@@ -21,6 +21,17 @@
   justify-content: center;
   align-items: center;
 }
+.joinButtonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vendors {
+  // display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+}
 .countdownWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +43,12 @@
   font-size: 35px;
   text-align: center;
   @include script-font;
+}
+.countdownIntro {
+  font-size: 35px;
+  text-align: center;
+  @include script-font;
+  margin-bottom: 35px;
 }
 .countdownSection {
   flex: 1;
@@ -102,19 +119,15 @@
 .instaWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 50px;
 }
 .countdownLinks {
   margin-left: 0.25em;
-  // margin-right: 0.25em;
 }
 .spacedCountdownLinks {
   margin-left: 0.25em;
   margin-right: 0.25em;
-}
-.checkOut {
-  text-align: center;
 }
 
 @media (min-width: 768px) {
