@@ -263,8 +263,7 @@ const Portfolio = ({ className, frontmatter }) => {
       <div className="countdownAndVideoDiv">
         <Row>
           <Countdown
-            // date='2020-12-13T14:00:00-05:00'
-            date='2020-12-03T17:59:00-05:00'
+            date='2020-12-13T14:00:00-05:00'
             renderer={renderer}
           />
         </Row>
