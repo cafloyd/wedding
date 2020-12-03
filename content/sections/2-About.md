@@ -31,13 +31,13 @@ timeline: [
     imageFileName: "about/5.jpg",
     header: "August, 2018",
     subheader: "We go international",
-    content: "The first international border we crossed together was Canadian, and we absolutely did not begin the trip with an emergency situation involving Caitlin realizing in Buffalo that she had forgotten her passport in Philly. We've been back to visit Toronto and Niagara Falls since then, and have also made it to England and Japan."
+    content: "The first international border we crossed together was Canadian (and we absolutely did not begin the trip with an emergency situation involving Caitlin realizing in Buffalo that she had forgotten her passport in Philly). We've been back to visit Toronto and Niagara Falls since then, and have also made it to England and Japan."
   },
   {
     imageFileName: "about/6.jpg",
     header: "July, 2019",
     subheader: "Reunited",
-    content: "After fifteen months of navigating a long-distance relationship, we were finally reunited when Caitlin relocated to Sleepy Hollow, NY. Without the need to travel every weekend, Justin finally had time to nerd out and play D&D."
+    content: "After fifteen months of navigating a long-distance relationship, we were finally reunited when Caitlin relocated to Sleepy Hollow, NY. Without the need to travel every weekend, Justin finally had time to nerd out, brewing beer and playing D&D with friends."
   },
   {
     imageFileName: "about/7.png",
