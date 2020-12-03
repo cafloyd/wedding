@@ -22,7 +22,7 @@ const Services = ({ className, frontmatter }) => {
       <Row>
         <div className="message">
           <p>
-            2020 has been a challenging year for everyone, but one good thing that has come out of it for us has been getting engaged. With so much unknown about the future, we didn&apos;t want to wait to get married and have decided to have a very small ceremony with immediate family this year. We wish we could have invited you to celebrate with us, but want to prioritize the health of our loved ones above anything else. With that in mind, we have decided to live stream the ceremony so that anyone interested can join us virtually.
+            2020 has been a challenging year, but for us, one good thing that has happened has been getting engaged. In such uncertain times, we didn&apos;t want to wait to get married, and have decided instead to have a very small ceremony with immediate family this year. We wish we could have celebrated with all our friends and family, but want to prioritize the health of our loved ones above anything else. With that in mind, we have decided to live stream the ceremony so that anyone interested can join us virtually, with a larger reception to come at some point in the future.
           </p>
           <p>
             The ceremony and live stream will be taking place on December 13 at 2pm EST, and the video will also be viewable afterwards. 
