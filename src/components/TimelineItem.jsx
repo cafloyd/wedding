@@ -10,7 +10,6 @@ const TimelineItem = ({
   invert,
   imageFileName,
   imageAlt,
-  imageContent,
   header,
   subheader,
   content,
@@ -23,13 +22,11 @@ const TimelineItem = ({
   return (
     <li className={liClassName}>
       <div className="timeline-image">
-        {imageContent || (
           <Image
             className="rounded-circle img-fluid"
             fileName={imageFileName}
             alt={imageAlt || header || subheader}
           />
-        )}
       </div>
       <div className="timeline-panel">
         <div className="timeline-heading">
@@ -48,7 +45,6 @@ TimelineItem.propTypes = {
   invert: PropTypes.bool,
   imageFileName: PropTypes.string,
   imageAlt: PropTypes.string,
-  imageContent: PropTypes.any,
   header: PropTypes.string,
   subheader: PropTypes.string,
   content: PropTypes.string,
@@ -58,7 +54,6 @@ TimelineItem.defaultProps = {
   invert: false,
   imageFileName: "",
   imageAlt: "",
-  imageContent: null,
   header: "",
   subheader: "",
   content: "",

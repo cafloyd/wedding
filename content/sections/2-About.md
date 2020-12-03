@@ -52,7 +52,10 @@ timeline: [
     content: "As we picnicked in Washington Square Park, blocks away from where we first met in Philadelphia, Justin popped the question as Caitlin obvliviously cracked jokes before finally realizing what what going on."
   },
   {
-    imageContent: "December\r\n13th\r\n2020"
+    imageFileName: "about/9.jpg",
+    imageContent: "December\r\n13th\r\n2020",
+    header: "December 13, 2020",
+    subheader: "The big day!"
   }
 ]
 ---

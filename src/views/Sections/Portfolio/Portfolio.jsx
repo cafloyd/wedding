@@ -5,7 +5,7 @@ import clsx from "clsx";
 import Countdown from 'react-countdown';
 
 
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 // import PortfolioItem from "components/PortfolioItem";
 import PageSection from "components/PageSection";
