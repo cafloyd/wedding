@@ -3,132 +3,110 @@
   * {
     z-index: 2;
   }
-}
-.video-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50%;
-  width: 100%;
-}
-.video {
-  align-self: center;
-  width: 100vw;
-}
-.countdownAndVideoDiv {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.joinButtonWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.vendors {
-  // display: flex;
-  // flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px;
-}
-.countdownWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 50px;
-  margin-top: 0px;
-  justify-content: center;
-}
-.countdownIntro {
-  font-size: 35px;
-  text-align: center;
-  @include script-font;
-}
-.countdownIntro {
-  font-size: 35px;
-  text-align: center;
-  @include script-font;
-  margin-bottom: 35px;
-}
-.countdownSection {
-  flex: 1;
-  display: flex;
-  align-content: stretch;
-}
-.countWrapper {
-  flex: 1;
-  border: 5px solid #dee2e6;
-  border-radius: 20px;
-  background-color: #f8f9fa;
-  color: #868e96;
-  margin: 5px;
-  padding: 10px;
-  width: 85px;
-  justify-content: center;
-  justify-items: center;
-  box-shadow: 20px, 20px, 20px, 0px, #9ebc9f;
-}
-.count {
-  font-size: 40px;
-  @include script-font;
-  text-align: center;
-}
-.unit {
-  text-align: center;
-  font-size: 16px;
-}
-.finishedCountdown {
-  .countWrapper {
-    border: #e9ecef;
-    color: #ced4da;
+  // -VIDEO
+  .countdownAndVideoDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .video-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50%;
+      width: 100%;
+      margin: 20px;
+      .video {
+        align-self: center;
+        width: 100vw;
+      }
+    }
   }
-  .finishedHeader {
-    color: #ced4da;
+
+  // -COUNTDOWN
+  .countdownIntro {
+    font-size: 35px;
+    text-align: center;
+    @include script-font;
+  }
+  .countdownWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-top: 0px;
+    justify-content: center;
+    .countdownSection {
+      flex: 1;
+      display: flex;
+      align-content: stretch;
+      .countWrapper {
+        flex: 1;
+        border: 5px solid #dee2e6;
+        border-radius: 20px;
+        background-color: #f8f9fa;
+        color: #868e96;
+        margin: 5px;
+        padding: 10px;
+        width: 85px;
+        justify-content: center;
+        justify-items: center;
+        box-shadow: 20px, 20px, 20px, 0px, #9ebc9f;
+        .count {
+          font-size: 40px;
+          @include script-font;
+          text-align: center;
+        }
+        .unit {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .instaWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    .spacedCountdownLinks {
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+    }
+  }
+
+  // -T MINUS 15
+  .countdownIntro {
+    font-size: 35px;
+    text-align: center;
+    @include script-font;
+    margin-bottom: 35px;
+  }
+  .joinButtonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vendors {
+    justify-content: center;
+    margin: 40px;
+    .countdownLinks {
+      margin-left: 0.25em;
+    }
+  }
+
+  // -COUNTDOWN END
+  .finishedCountdown {
+    .countWrapper {
+      border: #e9ecef;
+      color: #ced4da;
+    }
+    .finishedHeader {
+      color: #ced4da;
+    }
   }
 }
-.countdownEnd {
-  display: flex;
-  flex-wrap: wrap;
-  // border: 5px solid #adb5bd;
-  border: 5px solid #dee2e6;
-  border-radius: 20px;
-  background-color: #f8f9fa;
-  // color: #343a40;
-  color: #9ebc9f;
-  font-size: 20px;
-  margin: 20px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 5px, 5px, 5px, 0px, #868e96;
-}
-.startingSoon {
-  display: flex;
-  flex-wrap: wrap;
-  border: 5px solid #adb5bd;
-  border-radius: 20px;
-  background-color: #dee2e6;
-  color: #343a40;
-  margin: 20px;
-  padding: 10px;
-}
-.videoWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-.instaWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 50px;
-}
-.countdownLinks {
-  margin-left: 0.25em;
-}
-.spacedCountdownLinks {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
-}
+
 
 @media (min-width: 768px) {
   .video {
