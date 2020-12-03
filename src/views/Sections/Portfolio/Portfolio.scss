@@ -108,9 +108,8 @@
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .video {
-    height: 50vh;
-    width: 80vh;
+    width: 100%
   }
 }
