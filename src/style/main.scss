@@ -76,9 +76,79 @@ img::-moz-selection {
     border-color: darken($primary, 7.5%) !important;
     color: white;
   }
-  &:active,
   &:focus {
     box-shadow: 0 0 0 0.2rem rgba(158, 188, 159, 0.5) !important;
+  }
+}
+// .addToCal {
+//   color: white;
+// }
+
+// .react-add-to-calendar__button {
+//   color: white;
+// }
+// .react-add-to-calendar__dropdown {
+//   // color: white;
+
+//   .apple-link{
+//     color: #f8f9fa;
+//   }
+//   .google-link {
+//     color: #f8f9fa;
+//   }
+//   .outlook-link {
+//     color: #f8f9fa;
+//   }
+//   .outlookcom-link {
+//     color: #f8f9fa;
+//   }
+//   .yahoo-link {
+//     color: #f8f9fa;
+//   }
+// }
+.addToCalModal {
+  background-color: rgba(134, 142, 150, 0.95);
+  border-radius: 10px;
+  border: 2pt solid#adb5bd;
+  color: white;
+  padding: 10px;
+  a {
+    color: white;
+    font-size: 25px;
+    @include heading-font;
+    font-weight: 300;
+    margin: 15px 75px;
+  }
+  .calendarHeader {
+    width: 100%;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    padding: 5px;
+  }
+  .calendarContent {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .calendarLinksWrapper {
+    margin: 10px;
+  }
+  .calIcon {
+    color: white;
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
   }
 }
 
@@ -96,4 +166,3 @@ img::-moz-selection {
     }
   }
 }
-
