@@ -69,6 +69,17 @@ const Portfolio = ({ className, frontmatter }) => {
               </a>
               !
             </p>
+            <p>
+              Hosted at
+              <a
+                href="https://www.strathmore.org/mansion"
+                className="countdownLinks"
+                target="_blank"
+                rel="noreferrer"
+              >
+                the Mansion at Strathmore
+              </a>
+            </p>
           </div>
       </span>
     )
