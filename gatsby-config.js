@@ -22,7 +22,7 @@ module.exports = {
         short_name: "Caitlin & Justin",
         start_url: "/",
         background_color: "#ffffff",
-        theme_color: "#fed136",
+        theme_color: "#9ebc9f",
         display: "minimal-ui",
         icon: "content/assets/images/favicon.png",
       },
