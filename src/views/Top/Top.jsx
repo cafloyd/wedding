@@ -81,9 +81,9 @@ const Top = ({ frontmatter }) => {
                   rel="noreferrer"
                 >Yahoo</a>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> {/* calendarLinksWrapper */}
+          </div> {/* calendarContent */}
+        </div> // addToCalModal
         )
       }
       </Popup>

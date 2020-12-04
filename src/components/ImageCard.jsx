@@ -19,15 +19,15 @@ const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extr
               <div className="text-uppercase">
                 <div className="date">
                   Dec. 13, 2020
-                </div>
+                </div> {/* date */}
                 <div className="time">
                   2pm EST
-                </div>
+                </div> {/* time */}
               </div>
-            </div>
+            </div> {/* intro-text-no-button */}
             <br />
             {extraInfo}
-          </div>
+          </div> {/* intro-text */}
         </Container>
       </Card.ImgOverlay>
     </Card>
