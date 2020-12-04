@@ -16,7 +16,14 @@ const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extr
             <div className="intro-text-no-button">
               <div className="intro-heading">{header}</div>
               <div className="intro-lead-in text-uppercase">{subheader}</div>
-              <div className="date text-uppercase">Dec. 13, 2020</div>
+              <div className="text-uppercase">
+                <div className="date">
+                  Dec. 13, 2020
+                </div>
+                <div className="time">
+                  2pm EST
+                </div>
+              </div>
             </div>
             <br />
             {extraInfo}

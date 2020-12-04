@@ -37,8 +37,14 @@
     @include heading-font;
     font-size: 35px;
     font-weight: 200;
-    margin: 15px;
-    margin-bottom: 125px;
+    // margin: 5px;
+  }
+  .time {
+    @include heading-font;
+    font-size: 20px;
+    font-weight: 200;
+    // margin: 15px;
+    margin-bottom: 115px;
   }
 }
 @media (min-width: 768px) {
@@ -48,12 +54,12 @@
       height: 759px;
     }
     .intro-text {
-      padding-top: 150px;
+      padding-top: 100px;
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 30px;
         line-height: 40px;
-        margin-bottom: 20px;
+        // margin-bottom: 10px;
         @include heading-font
       }
       .intro-heading {
@@ -65,7 +71,10 @@
       }
       .date {
         font-size: 45px;
-        margin-bottom: 15px;
+      }
+      .time {
+        font-size: 25px;
+        margin-bottom: 20px;
       }
     }
   }
