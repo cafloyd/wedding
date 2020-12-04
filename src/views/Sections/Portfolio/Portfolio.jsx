@@ -34,7 +34,7 @@ const Portfolio = ({ className, frontmatter }) => {
                 </Button> <br/>
               </a>
             </div>
-          </div>
+          </div> {/* joinButtonWrapper */}
           <div className="vendors">
             <p>
               Music provided by
@@ -80,8 +80,8 @@ const Portfolio = ({ className, frontmatter }) => {
                 the Mansion at Strathmore
               </a>
             </p>
-          </div>
-      </span>
+          </div> {/* vendors */}
+      </span> // finishedCountdown
     )
   }
 
@@ -169,45 +169,45 @@ const Portfolio = ({ className, frontmatter }) => {
         <div className="countdownAndTanuki">
           <div className="countdownIntro">
             The ceremony will begin in
-          </div>
+          </div> {/* countdownIntro */}
           <div className="countdownWrapper">
             <div className="countdownSection">
               <div className="countWrapper">
                 <div className="count">
                   {days} 
-                </div>
+                </div> {/* count */}
                 <div className="unit">
                   days
-                </div>
-              </div>
+                </div> {/* unit */}
+              </div> {/* countWrapper */}
               <div className="countWrapper">
                 <div className="count">
                   {hours} 
-                </div>
+                </div> {/* count */}
                 <div className="unit">
                   hours
-                </div>
-              </div>
-            </div>
+                </div> {/* unit */}
+              </div> {/* countWrapper */}
+            </div> {/* countdownSection */}
             <div className="countdownSection">
               <div className="countWrapper">
                 <div className="count">
                   {minutes} 
-                </div>
+                </div> {/* count */}
                 <div className="unit">
                   minutes
-                </div>
-              </div>
+                </div> {/* unit */}
+              </div> {/* countWrapper */}
               <div className="countWrapper">
                 <div className="count">
                   {seconds} 
-                </div>
+                </div> {/* count */}
                 <div className="unit">
                   seconds
-                </div>
-              </div>
-            </div>
-          </div>
+                </div> {/* unit */}
+              </div> {/* countWrapper */}
+            </div> {/* countdownSection */}
+          </div> {/* countdownWrapper */}
           <div className="instaWrapper">
             <p className="checkOut">
               Check out 
@@ -221,8 +221,8 @@ const Portfolio = ({ className, frontmatter }) => {
               </a>
               while you wait!
             </p>
-          </div>
-        </div>
+          </div> {/* instaWrapper */}
+        </div> {/* countdownAndTanuki */}
       </span>;
   };
 
@@ -252,9 +252,9 @@ const Portfolio = ({ className, frontmatter }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
               />
-          </div>
+          </div> {/* videoWrapper */}
         </Row>
-      </div>
+      </div> {/* countdownAndVideoDiv */}
     </PageSection>
   );
 };
