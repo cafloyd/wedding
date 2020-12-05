@@ -18,7 +18,6 @@ const Services = ({ className, frontmatter }) => {
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
-      {/* <Row className="text-center"> */}
       <Row>
         <div className="message">
           <p>
@@ -30,11 +29,9 @@ const Services = ({ className, frontmatter }) => {
           <p>
             We hope you can join us, whether live for the virtual event or down the road when we have a belated reception to celebrate with you all. We&apos;ll look forward to seeing you!
           </p>
-          {/* <br /> */}
           <p>
             Sending our love,
           </p>
-          {/* <br /> */}
           <p>
             Caitlin & Justin
           </p>
