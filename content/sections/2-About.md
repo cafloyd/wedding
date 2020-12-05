@@ -13,7 +13,7 @@ timeline: [
     imageFileName: "about/2.jpg",
     header: "Late 2017 – Early 2018",
     subheader: "A budding romance",
-    content: "Together we shared the joys of Philly life (and Justin even convinced Caitlin to spend some time in the ‘burbs).  We began to meet friends and family, and our relationship continued to grow into something we both knew was truly special"
+    content: "Together we shared the joys of Philly life (and Justin even convinced Caitlin to spend some time in the ‘burbs).  We began to meet friends and family, and our relationship continued to grow into something we both knew was truly special."
   },
   {
     imageFileName: "about/3.jpg",
