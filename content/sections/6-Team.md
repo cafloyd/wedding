@@ -5,7 +5,7 @@ header: "Giving"
 content: "Though not necessary, we would love it if our guests popped a bottle of Champagne instead of a gift to honor the start of our marriage. In the spirit of the giving season, please feel encouraged to donate to Nationalities Service Center (where Caitlin used to work!), or another of our favorite charities, the American Society for the Prevention of Cruelty to Animals."
 teamMember: [
   {
-    imageFileName: "team/1.jpeg",
+    imageFileName: "team/1.png",
     header: "Nationalities Service Center",
     subheader: "Welcoming the world to Philadelphia since 1921",
     social: {
