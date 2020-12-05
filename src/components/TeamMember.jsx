@@ -23,7 +23,11 @@ const TeamMember = ({
 
   return (
     <div className="team-member">
-      <a href={website}>
+      <a 
+        href={website}
+        target="_blank"
+        rel="noreferrer"
+      >
         <Image
           className="mx-auto circle rounded-circle"
           fileName={imageFileName}
