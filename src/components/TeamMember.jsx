@@ -19,7 +19,7 @@ const TeamMember = ({
   const githubPart = github ? <SocialIcons.Github userName={github} /> : null;
   const mediumPart = medium ? <SocialIcons.Medium userName={medium} /> : null;
   const instagramPart = instagram ? <SocialIcons.Instagram userName={instagram} /> : null;
-  const websitePart = instagram ? <SocialIcons.Website userName={website} /> : null;
+  const websitePart = website ? <SocialIcons.Website userName={website} /> : null;
 
   return (
     <div className="team-member">
