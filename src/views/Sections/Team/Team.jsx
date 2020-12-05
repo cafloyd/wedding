@@ -16,8 +16,7 @@ const Team = ({ className, frontmatter }) => {
     anchor,
     header: rootHeader,
     subheader: rootSubHeader,
-    teamMember,
-    website
+    teamMember
   } = frontmatter;
 
   return (

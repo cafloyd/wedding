@@ -33,7 +33,7 @@ const PortfolioDetailDialog = ({
           fileName={imageFileName}
           alt={imageAlt || header || subheader}
         />
-        {/* <p>{content}</p> */}
+        <p>{content}</p>
         {extraInfo}
       </Modal.Body>
       <Modal.Footer>
