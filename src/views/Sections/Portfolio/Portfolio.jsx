@@ -244,7 +244,7 @@ const Portfolio = ({ className, frontmatter }) => {
             className="videoWrapper"
           >
             <a
-              href="https://www.youtube.com/embed/EXOL-3JyXMI"
+              href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
               target="_blank"
               rel="noreferrer"
             >
