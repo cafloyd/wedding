@@ -242,7 +242,20 @@ const Portfolio = ({ className, frontmatter }) => {
           <div
             className="videoWrapper"
           >
-            <iframe 
+            <a
+              href="https://www.youtube.com/embed/EXOL-3JyXMI"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img 
+                src="../../../../content/assets/images/portfolio/YoutubeHover.png" 
+                alt="youtubeLink" 
+                className="imgHover"
+                width="560" 
+                height="349"
+              />
+            </a>
+            {/* <iframe 
               width="560" 
               height="349"
               src="https://www.youtube.com/embed/EXOL-3JyXMI" 
@@ -251,7 +264,7 @@ const Portfolio = ({ className, frontmatter }) => {
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
-              />
+              /> */}
           </div> {/* videoWrapper */}
         </Row>
       </div> {/* countdownAndVideoDiv */}
