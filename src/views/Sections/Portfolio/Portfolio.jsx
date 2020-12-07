@@ -7,7 +7,8 @@ import Countdown from 'react-countdown';
 import { Row, Button } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
-import YoutubeHover from "content/assets/images/portfolio/YoutubeHover.png"
+import Youtube from "content/assets/images/portfolio/Youtube.png";
+import YoutubeHover from "content/assets/images/portfolio/YoutubeHover.png";
 import "./Portfolio.scss";
 
 const Portfolio = ({ className, frontmatter }) => {
@@ -244,17 +245,25 @@ const Portfolio = ({ className, frontmatter }) => {
             className="videoWrapper"
           >
             <a
-              href="https://www.youtube.com/embed/EXOL-3JyXMI"
+              href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
               target="_blank"
               rel="noreferrer"
             >
-              <img 
-                src={YoutubeHover} 
-                alt="youtubeLink" 
-                className="imgHover"
-                width="560" 
-                height="349"
-              />
+              <div className="card">
+                <img 
+                  src={YoutubeHover} 
+                  alt="youtubeLink" 
+                  className="img-top"
+                  width="560" 
+                  height="349"
+                />
+                {/* <img 
+                  src={Youtube} 
+                  alt="youtubeLink" 
+                  width="560" 
+                  height="349"
+                /> */}
+              </div> {/* youtubeCard */}
             </a>
             {/* <iframe 
               width="560" 

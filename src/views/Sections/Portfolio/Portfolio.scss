@@ -23,6 +23,36 @@
       }
     }
   }
+  // - IMAGE CHANGE ON HOVER USING CSS POSIITONING
+
+  // .card {
+  //   position: relative;
+  //   display: inline-block;
+  //   width: 130px;
+  //   height: 195px;
+  // }
+  // .card .img-top {
+  //   display: none;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 99;
+  // }
+  // card:hover .img-top {
+  //   display: inline;
+  // }
+
+  // -IMAGE CHANGE ON HOVER USING BACKGROUND IMAGE
+  // .card {
+  //   width: 130px;
+  //   height: 195px;
+  //   background-image: url ("../../../../content/assets/images/portfolio/Youtube.png");
+  //   display: inline-block;
+  //   border: 5pt solid red;
+  // }
+  // .card:hover {
+  //   background: url("../../../../content/assets/images/portfolio/YoutubeHover.png") no-repeat;
+  // }
 
   // -COUNTDOWN
   .countdownIntro {
@@ -110,6 +140,6 @@
 // -MOBILE VIEW
 @media (max-width: 768px) {
   .video {
-    width: 100%
+    width: 100%;
   }
 }
