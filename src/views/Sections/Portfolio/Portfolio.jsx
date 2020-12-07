@@ -7,6 +7,7 @@ import Countdown from 'react-countdown';
 import { Row, Button } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
+import YoutubeHover from "content/assets/images/portfolio/YoutubeHover.png"
 import "./Portfolio.scss";
 
 const Portfolio = ({ className, frontmatter }) => {
@@ -248,7 +249,7 @@ const Portfolio = ({ className, frontmatter }) => {
               rel="noreferrer"
             >
               <img 
-                src="../../../../content/assets/images/portfolio/YoutubeHover.png" 
+                src={YoutubeHover} 
                 alt="youtubeLink" 
                 className="imgHover"
                 width="560" 
