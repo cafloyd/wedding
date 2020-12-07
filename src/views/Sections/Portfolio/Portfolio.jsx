@@ -2,12 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import Countdown from 'react-countdown';
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import Notifications, { notify } from "react-notify-toast";
 
 
 import { Row, Button } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
-import YoutubeHover from "content/assets/images/portfolio/YoutubeHover.png"
+import Youtube from "content/assets/images/portfolio/Youtube.png";
+import YoutubeHover from "content/assets/images/portfolio/YoutubeHover.png";
 import "./Portfolio.scss";
 
 const Portfolio = ({ className, frontmatter }) => {
@@ -16,6 +19,16 @@ const Portfolio = ({ className, frontmatter }) => {
   }
 
   const { anchor, header, subheader } = frontmatter;
+
+  const copiedToClipboard= () => {
+    const alertColor = { background: "#9ebc9f", text: "white" };
+    notify.show(
+      "Copied hashtag to clipboard. Take a selfie and tag us on social media!",
+      "custom",
+      5000,
+      alertColor
+    );
+  }
 
   const Completionist = () => {
     return (
@@ -228,48 +241,74 @@ const Portfolio = ({ className, frontmatter }) => {
   };
 
   return (
-    <PageSection className={clsx("portfolio-section", className)} id={anchor}>
-      <Row className="justify-content-center">
-        <SectionHeader header={header} subheader={subheader}/>
-      </Row>
-      <div className="countdownAndVideoDiv">
-        <Row>
-          <Countdown
-            date='2020-12-13T14:00:00-05:00'
-            renderer={renderer}
-          />
-        </Row>
-        <Row>
-          <div
-            className="videoWrapper"
-          >
-            <a
-              href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
-              target="_blank"
-              rel="noreferrer"
+    <div className="outerWrapper">
+      <PageSection className={clsx("portfolio-section", className)} id={anchor}>
+        <Notifications options={{zIndex: 200, top: '50px'}} />
+        <Row className="justify-content-center ceremony-header">
+          <SectionHeader header={header} subheader={subheader}/>
+          {/* <p className="hashtag">
+            #caitlinandjustin2020
+          </p> hashtag */}
+          <CopyToClipboard text="#CaitlinAndJustin2020">
+            <button
+              onClick={copiedToClipboard}
+              id="copy-to-clipboard"
+              variant="primary"
+              type="button" 
+              size="xl"
+              className="hashtag"
             >
-              <img 
-                src={YoutubeHover} 
-                alt="youtubeLink" 
-                className="imgHover"
+              #CaitlinAndJustin2020
+            </button>
+          </CopyToClipboard>
+        </Row>
+        <div className="countdownAndVideoDiv">
+          <Row>
+            <Countdown
+              date='2020-12-13T14:00:00-05:00'
+              renderer={renderer}
+            />
+          </Row>
+          <Row>
+            <div
+              className="videoWrapper"
+            >
+              <a
+                href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="card">
+                  <img 
+                    src={YoutubeHover} 
+                    alt="youtubeLink" 
+                    className="img-top"
+                    width="560" 
+                    height="auto"
+                  />
+                  {/* <img 
+                    src={Youtube} 
+                    alt="youtubeLink" 
+                    width="560" 
+                    height="349"
+                  /> */}
+                </div> {/* youtubeCard */}
+              </a>
+              {/* <iframe 
                 width="560" 
                 height="349"
-              />
-            </a>
-            {/* <iframe 
-              width="560" 
-              height="349"
-              src="https://www.youtube.com/embed/EXOL-3JyXMI" 
-              title="ceremony" 
-              className="video"
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-              /> */}
-          </div> {/* videoWrapper */}
-        </Row>
-      </div> {/* countdownAndVideoDiv */}
-    </PageSection>
+                src="https://www.youtube.com/embed/EXOL-3JyXMI" 
+                title="ceremony" 
+                className="video"
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                /> */}
+            </div> {/* videoWrapper */}
+          </Row>
+        </div> {/* countdownAndVideoDiv */}
+      </PageSection>
+    </div>
   );
 };
 
