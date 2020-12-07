@@ -246,9 +246,6 @@ const Portfolio = ({ className, frontmatter }) => {
         <Notifications options={{zIndex: 200, top: '50px'}} />
         <Row className="justify-content-center ceremony-header">
           <SectionHeader header={header} subheader={subheader}/>
-          {/* <p className="hashtag">
-            #caitlinandjustin2020
-          </p> hashtag */}
           <CopyToClipboard text="#CaitlinAndJustin2020">
             <button
               onClick={copiedToClipboard}
@@ -294,16 +291,6 @@ const Portfolio = ({ className, frontmatter }) => {
                   /> */}
                 </div> {/* youtubeCard */}
               </a>
-              {/* <iframe 
-                width="560" 
-                height="349"
-                src="https://www.youtube.com/embed/EXOL-3JyXMI" 
-                title="ceremony" 
-                className="video"
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-                /> */}
             </div> {/* videoWrapper */}
           </Row>
         </div> {/* countdownAndVideoDiv */}
