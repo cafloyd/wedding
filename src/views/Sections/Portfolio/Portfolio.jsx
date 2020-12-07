@@ -243,8 +243,8 @@ const Portfolio = ({ className, frontmatter }) => {
   return (
     <div className="outerWrapper">
       <PageSection className={clsx("portfolio-section", className)} id={anchor}>
+        <Notifications options={{zIndex: 200, top: '50px'}} />
         <Row className="justify-content-center ceremony-header">
-          <Notifications options={{zIndex: 200, top: '50px'}} />
           <SectionHeader header={header} subheader={subheader}/>
           {/* <p className="hashtag">
             #caitlinandjustin2020
@@ -253,8 +253,10 @@ const Portfolio = ({ className, frontmatter }) => {
             <button
               onClick={copiedToClipboard}
               id="copy-to-clipboard"
-              variant="outline-primary"
-              type="button"
+              variant="primary"
+              type="button" 
+              size="xl"
+              className="hashtag"
             >
               #CaitlinAndJustin2020
             </button>

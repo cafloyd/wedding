@@ -11,9 +11,14 @@
   }
   .hashtag {
     margin: 20px;
-    font-size: 18pt;
-    font-weight: 400;
+    font-size: 14pt;
+    font-weight: 500;
     color: #9ebc9f;
+    border: 3pt solid #9ebc9f;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #e9ecef;
   }
   // -VIDEO
   .countdownAndVideoDiv {
