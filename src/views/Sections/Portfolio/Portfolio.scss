@@ -3,6 +3,18 @@
   * {
     z-index: 2;
   }
+  .ceremony-header {
+    padding-bottom: 20px;
+    .section-subheading {
+      margin-bottom: 10px;
+    }
+  }
+  .hashtag {
+    margin: 20px;
+    font-size: 18pt;
+    font-weight: 400;
+    color: #9ebc9f;
+  }
   // -VIDEO
   .countdownAndVideoDiv {
     display: flex;
@@ -140,6 +152,9 @@
 // -MOBILE VIEW
 @media (max-width: 768px) {
   .video {
+    width: 100%;
+  }
+  .img-top {
     width: 100%;
   }
 }

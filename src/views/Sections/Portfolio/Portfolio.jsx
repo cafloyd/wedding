@@ -230,8 +230,11 @@ const Portfolio = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={clsx("portfolio-section", className)} id={anchor}>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center ceremony-header">
         <SectionHeader header={header} subheader={subheader}/>
+        <p className="hashtag">
+          #caitlinandjustin2020
+        </p> {/* hashtag */}
       </Row>
       <div className="countdownAndVideoDiv">
         <Row>
@@ -255,7 +258,7 @@ const Portfolio = ({ className, frontmatter }) => {
                   alt="youtubeLink" 
                   className="img-top"
                   width="560" 
-                  height="349"
+                  height="auto"
                 />
                 {/* <img 
                   src={Youtube} 
