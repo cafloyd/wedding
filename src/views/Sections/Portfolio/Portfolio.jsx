@@ -23,7 +23,7 @@ const Portfolio = ({ className, frontmatter }) => {
   const copiedToClipboard= () => {
     const alertColor = { background: "#9ebc9f", text: "white" };
     notify.show(
-      "Copied hashtag to clipboard. Take a selfie and tag us on social media!",
+      "Hashtag copied to clipboard. Take a selfie and tag us on social media!",
       "custom",
       5000,
       alertColor
