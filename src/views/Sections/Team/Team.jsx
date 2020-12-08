@@ -46,7 +46,7 @@ const Team = ({ className, frontmatter }) => {
                   <button
                     type="button"
                     onClick={copiedToClipboard}
-                    className="invisibleButton"
+                    className="invisibleButton text-muted"
                   >
                     <b>#caitlinandjustin2020</b>
 
