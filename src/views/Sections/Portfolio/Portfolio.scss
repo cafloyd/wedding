@@ -159,7 +159,18 @@
   .video {
     width: 100%;
   }
-  .middle {
+  .image {
     width: 100%;
+  }
+  .imageHover {
+    width: 100%;
+  }
+}
+@media (min-width: 768px){
+  .image {
+    width: 560;
+  }
+  .imageHover {
+    width: 560;
   }
 }

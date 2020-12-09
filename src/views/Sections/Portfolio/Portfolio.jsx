@@ -271,6 +271,7 @@ const Portfolio = ({ className, frontmatter }) => {
               href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
               target="_blank"
               rel="noreferrer"
+              className="youtubeLink"
             >
               <div
                 className="container"
