@@ -261,10 +261,67 @@ const Portfolio = ({ className, frontmatter }) => {
         </Row>
         <div className="countdownAndVideoDiv">
           <Row>
-            <Countdown
-              date='2020-12-13T14:00:00-05:00'
-              renderer={renderer}
-            />
+            <span className="finishedCountdown">
+              <div className="joinButtonWrapper">
+                <div>
+                  <a
+                    href="https://youtu.be/EXOL-3JyXMI"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button size="xl" variant="primary" className="text-uppercase main-button join-now">
+                      <p className="buttonTitle">Watch the Ceremony!</p>
+                    </Button> <br/>
+                  </a>
+                </div>
+              </div> {/* joinButtonWrapper */}
+              <div className="vendors">
+                <p>
+                  Hosted at
+                  <a
+                    href="https://www.strathmore.org/mansion"
+                    className="countdownLinks"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    the Mansion at Strathmore
+                  </a>
+                </p>
+                <p>
+                  Officiated by 
+                  <a 
+                    href="https://elleweds.wixsite.com/elleweds"
+                    className="countdownLinks"
+                    target="_blank"
+                    rel="noreferrer">
+                      Elle is for Love
+                  </a>
+                </p>
+                <p>
+                  Music provided by
+                  <a
+                    href="http://cellobosco.com/"
+                    className="countdownLinks"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Carol Anne Bosco
+                  </a>
+                </p>
+                <p>
+                  Stay tuned for photos by
+                  <a
+                    href="https://anaisabelphotography.com/"
+                    className="countdownLinks"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ana Isabel Photography
+                  </a>
+                  !
+                </p>
+              </div> {/* vendors */}
+            </span> {/* finished countdown */}
           </Row>
           <Row>
             <a
