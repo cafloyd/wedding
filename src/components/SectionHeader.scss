@@ -1,6 +1,6 @@
 .section-header {
   h2.section-heading {
-    font-size: 40px;
+    // font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
     @include script-font;
@@ -17,5 +17,10 @@
 @media (min-width: 768px) {
   h2.section-heading {
     font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  h2.section-heading {
+    font-size: 40px;
   }
 }
