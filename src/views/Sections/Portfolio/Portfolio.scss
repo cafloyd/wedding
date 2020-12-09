@@ -40,36 +40,33 @@
       }
     }
   }
-  // - IMAGE CHANGE ON HOVER USING CSS POSIITONING
 
-  // .card {
-  //   position: relative;
-  //   display: inline-block;
-  //   width: 130px;
-  //   height: 195px;
-  // }
-  // .card .img-top {
-  //   display: none;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 99;
-  // }
-  // card:hover .img-top {
-  //   display: inline;
-  // }
-
-  // -IMAGE CHANGE ON HOVER USING BACKGROUND IMAGE
-  // .card {
-  //   width: 130px;
-  //   height: 195px;
-  //   background-image: url ("../../../../content/assets/images/portfolio/Youtube.png");
-  //   display: inline-block;
-  //   border: 5pt solid red;
-  // }
-  // .card:hover {
-  //   background: url("../../../../content/assets/images/portfolio/YoutubeHover.png") no-repeat;
-  // }
+  // -IMAGE CHANGE ON HOVER
+  .container {
+    position: relative;
+    .image {
+      opacity: 1;
+      display: block;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  }
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  .container:hover .middle {
+    opacity: 1;
+  }
 
   // -COUNTDOWN
   .countdownIntro {
@@ -162,7 +159,7 @@
   .video {
     width: 100%;
   }
-  .img-top {
+  .image .imageHover {
     width: 100%;
   }
 }
