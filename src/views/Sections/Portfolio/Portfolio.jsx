@@ -267,31 +267,32 @@ const Portfolio = ({ className, frontmatter }) => {
             />
           </Row>
           <Row>
-            <div
-              className="videoWrapper"
+            <a
+              href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
+              target="_blank"
+              rel="noreferrer"
             >
-              <a
-                href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
-                target="_blank"
-                rel="noreferrer"
+              <div
+                className="container"
               >
-                <div className="card">
+                <img 
+                  src={Youtube} 
+                  alt="youtubeLink" 
+                  className="image"
+                  width="560" 
+                  height="auto"
+                />
+                <div className="middle">
                   <img 
                     src={YoutubeHover} 
                     alt="youtubeLink" 
-                    className="img-top"
+                    className="imageHover"
                     width="560" 
                     height="auto"
                   />
-                  {/* <img 
-                    src={Youtube} 
-                    alt="youtubeLink" 
-                    width="560" 
-                    height="349"
-                  /> */}
-                </div> {/* youtubeCard */}
-              </a>
-            </div> {/* videoWrapper */}
+                </div> {/* middle */}
+              </div> {/* container */}
+            </a>
           </Row>
         </div> {/* countdownAndVideoDiv */}
       </PageSection>
