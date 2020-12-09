@@ -11,11 +11,11 @@
   }
   .hashtag {
     margin: 20px;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 500;
     color: #9ebc9f;
     border: 3pt solid #9ebc9f;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px #e9ecef;
@@ -73,7 +73,7 @@
 
   // -COUNTDOWN
   .countdownIntro {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     @include script-font;
   }
@@ -124,7 +124,7 @@
 
   // -T MINUS 15
   .countdownIntro {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     @include script-font;
     margin-bottom: 35px;
@@ -133,6 +133,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    .join-now {
+      padding: 15px 75px;
+    }
   }
   .vendors {
     justify-content: center;

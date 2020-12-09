@@ -51,14 +51,14 @@ const Portfolio = ({ className, frontmatter }) => {
           </div> {/* joinButtonWrapper */}
           <div className="vendors">
             <p>
-              Music provided by
+              Hosted at
               <a
-                href="http://cellobosco.com/"
+                href="https://www.strathmore.org/mansion"
                 className="countdownLinks"
                 target="_blank"
                 rel="noreferrer"
               >
-                Carol Anne Bosco
+                the Mansion at Strathmore
               </a>
             </p>
             <p>
@@ -72,6 +72,17 @@ const Portfolio = ({ className, frontmatter }) => {
               </a>
             </p>
             <p>
+              Music provided by
+              <a
+                href="http://cellobosco.com/"
+                className="countdownLinks"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Carol Anne Bosco
+              </a>
+            </p>
+            <p>
               Stay tuned for photos by
               <a
                 href="https://anaisabelphotography.com/"
@@ -82,17 +93,6 @@ const Portfolio = ({ className, frontmatter }) => {
                 Ana Isabel Photography
               </a>
               !
-            </p>
-            <p>
-              Hosted at
-              <a
-                href="https://www.strathmore.org/mansion"
-                className="countdownLinks"
-                target="_blank"
-                rel="noreferrer"
-              >
-                the Mansion at Strathmore
-              </a>
             </p>
           </div> {/* vendors */}
       </span> // finishedCountdown
@@ -262,7 +262,8 @@ const Portfolio = ({ className, frontmatter }) => {
         <div className="countdownAndVideoDiv">
           <Row>
             <Countdown
-              date='2020-12-13T14:00:00-05:00'
+              // date='2020-12-13T14:00:00-05:00'
+              date='2020-12-08T14:00:00-05:00'
               renderer={renderer}
             />
           </Row>
