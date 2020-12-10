@@ -19,6 +19,14 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px #e9ecef;
+    &:hover {
+      background-color: darken($primary, 7.5%) !important;
+      border-color: darken($primary, 7.5%) !important;
+      color: white;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(158, 188, 159, 0.5) !important;
+    }
   }
   // -VIDEO
   .countdownAndVideoDiv {
@@ -95,7 +103,7 @@
         width: 85px;
         justify-content: center;
         justify-items: center;
-        box-shadow: 20px, 20px, 20px, 0px, #9ebc9f;
+        box-shadow: 5px 5px #e9ecef;
         .count {
           font-size: 40px;
           @include script-font;
@@ -172,5 +180,9 @@
   }
   .imageHover {
     width: 560;
+  }
+  .finishedCountdown {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }

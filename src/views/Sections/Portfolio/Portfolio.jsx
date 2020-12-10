@@ -68,7 +68,7 @@ const Portfolio = ({ className, frontmatter }) => {
                 className="countdownLinks"
                 target="_blank"
                 rel="noreferrer">
-                  Elle is for Love
+                  Erren Lee
               </a>
             </p>
             <p>
@@ -90,7 +90,7 @@ const Portfolio = ({ className, frontmatter }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Ana Isabel Photography
+                Ana Isabel
               </a>
               !
             </p>
