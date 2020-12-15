@@ -20,9 +20,6 @@ const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extr
                 <div className="date">
                   Dec. 13, 2020
                 </div> {/* date */}
-                <div className="time">
-                  2pm EST
-                </div> {/* time */}
               </div>
             </div> {/* intro-text-no-button */}
             <br />
