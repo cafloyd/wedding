@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import { Col } from "react-bootstrap";
 import Image from "components/Image";
 import Icon from "components/Icon";
-import PortfolioDetailDialog from "components/PortfolioDetailDialog";
+import PhotoDetailDialog from "components/PhotoDetailDialog";
 
-import "./PortfolioItem.scss";
+import "./PhotoItem.scss";
 
-const PortfolioItem = ({
+const PhotoItem = ({
   imageFileName,
   imageAlt,
   header,
@@ -28,11 +28,11 @@ const PortfolioItem = ({
 
   return (
     <>
-      <Col md={4} sm={6} className="portfolio-item">
+      <Col md={4} sm={6} className="photo-item">
         <a
           role="button"
           tabIndex={-1}
-          className="portfolio-link"
+          className="photo-link"
           data-toggle="modal"
           onClick={handleShowDetail}
         >
@@ -41,18 +41,18 @@ const PortfolioItem = ({
             fileName={imageFileName}
             alt={imageAlt || header || subheader}
           />
-          <div className="portfolio-hover">
-            <div className="portfolio-hover-content">
+          <div className="photo-hover">
+            <div className="photo-hover-content">
               <Icon iconName="PlusIcon" size="2x" />
             </div>
           </div>
         </a>
-        <div className="portfolio-caption">
+        <div className="photo-caption">
           <h4>{header}</h4>
           {subheader ? <p className="text-muted">{subheader}</p> : null}
         </div>
       </Col>
-      <PortfolioDetailDialog
+      <PhotoDetailDialog
         show={showDetail}
         onHide={handleHideDetail}
         imageFileName={imageFileNameDetail || imageFileName}
@@ -66,7 +66,7 @@ const PortfolioItem = ({
   );
 };
 
-PortfolioItem.propTypes = {
+PhotoItem.propTypes = {
   imageFileName: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
   header: PropTypes.string.isRequired,
@@ -77,7 +77,7 @@ PortfolioItem.propTypes = {
   extraInfo: PropTypes.any,
 };
 
-PortfolioItem.defaultProps = {
+PhotoItem.defaultProps = {
   imageAlt: "",
   subheader: "",
   content: "",
@@ -86,4 +86,4 @@ PortfolioItem.defaultProps = {
   extraInfo: null,
 };
 
-export default PortfolioItem;
+export default PhotoItem;

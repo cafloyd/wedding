@@ -5,7 +5,7 @@ import { Modal, Button } from "react-bootstrap";
 import Image from "components/Image";
 import Icon from "./Icon";
 
-const PortfolioDetailDialog = ({
+const PhotoDetailDialog = ({
   onHide,
   imageFileName,
   imageAlt,
@@ -48,7 +48,7 @@ const PortfolioDetailDialog = ({
   );
 };
 
-PortfolioDetailDialog.propTypes = {
+PhotoDetailDialog.propTypes = {
   onHide: PropTypes.func,
   imageFileName: PropTypes.string,
   imageAlt: PropTypes.string,
@@ -58,7 +58,7 @@ PortfolioDetailDialog.propTypes = {
   extraInfo: PropTypes.any,
 };
 
-PortfolioDetailDialog.defaultProps = {
+PhotoDetailDialog.defaultProps = {
   onHide: null,
   imageFileName: "",
   imageAlt: null,
@@ -68,4 +68,4 @@ PortfolioDetailDialog.defaultProps = {
   extraInfo: null,
 };
 
-export default PortfolioDetailDialog;
+export default PhotoDetailDialog;

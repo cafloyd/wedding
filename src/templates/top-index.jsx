@@ -46,7 +46,7 @@ export const query = graphql`
           jumpToAnchor
           jumpToAnchorText
           menuText
-          portfolios {
+          photos {
             content
             extraInfo
             header
