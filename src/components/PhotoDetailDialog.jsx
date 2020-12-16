@@ -24,23 +24,25 @@ const PhotoDetailDialog = ({
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">{header}</Modal.Title>
+        {/* <Modal.Title id="contained-modal-title-vcenter">{header}</Modal.Title> */}
       </Modal.Header>
       <Modal.Body className="mx-auto">
-        <p className="item-intro text-muted">{subheader}</p>
+        {/* <p className="item-intro text-muted">{subheader}</p> */}
         <Image
           className="img-fluid d-block"
           fileName={imageFileName}
           alt={imageAlt || header || subheader}
+          width="100%"
+          height="auto"
         />
         <p>{content}</p>
-        {extraInfo}
+        {/* {extraInfo} */}
       </Modal.Body>
       <Modal.Footer>
         <div className="mx-auto">
           <Button variant="primary" onClick={onHide}>
             <Icon iconName="CloseIcon" />
-            &nbsp; Close Project
+            &nbsp; Close Photo
           </Button>
         </div>
       </Modal.Footer>

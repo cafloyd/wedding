@@ -47,10 +47,10 @@ const PhotoItem = ({
             </div>
           </div>
         </a>
-        <div className="photo-caption">
+        {/* <div className="photo-caption">
           <h4>{header}</h4>
           {subheader ? <p className="text-muted">{subheader}</p> : null}
-        </div>
+        </div> */}
       </Col>
       <PhotoDetailDialog
         show={showDetail}
