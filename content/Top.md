@@ -1,6 +1,6 @@
 ---
 header: "Caitlin & Justin"
-imageFileName: "header-bg.png"
+imageFileName: "header-bg.jpg"
 jumpToAnchor: "Ceremony"
 jumpToAnchorText: "Watch the Ceremony"
 ---
