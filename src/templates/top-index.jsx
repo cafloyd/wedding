@@ -41,7 +41,6 @@ export const query = graphql`
           content
           copyright
           header
-          email
           imageFileName
           jumpToAnchor
           jumpToAnchorText
@@ -56,12 +55,6 @@ export const query = graphql`
           }
           privacyHref
           privacyText
-          services {
-            content
-            header
-            iconName
-            imageFileName
-          }
           social {
             facebook
             github
@@ -86,7 +79,6 @@ export const query = graphql`
             }
             subheader
           }
-          telephone
           termsHref
           termsText
           title
