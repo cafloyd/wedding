@@ -246,35 +246,24 @@ const Portfolio = ({ className, frontmatter }) => {
         <Notifications options={{zIndex: 200, top: '50px'}} />
         <Row className="justify-content-center ceremony-header">
           <SectionHeader header={header} subheader={subheader}/>
-          <CopyToClipboard text="#CaitlinAndJustin2020">
-            <button
-              onClick={copiedToClipboard}
-              id="copy-to-clipboard"
-              variant="primary"
-              type="button" 
-              size="xl"
-              className="hashtag"
-            >
-              #CaitlinAndJustin2020
-            </button>
-          </CopyToClipboard>
+            <div className="joinButtonWrapper">
+              <div>
+                <a
+                  href="https://youtu.be/EXOL-3JyXMI"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button size="xl" variant="primary" className="text-uppercase main-button join-now">
+                    <p className="buttonTitle">Watch the Ceremony!</p>
+                  </Button> <br/>
+                </a>
+              </div>
+            </div> {/* joinButtonWrapper */}
         </Row>
         <div className="countdownAndVideoDiv">
           <Row className="vendorDiv">
             <span className="finishedCountdown">
-              <div className="joinButtonWrapper">
-                <div>
-                  <a
-                    href="https://youtu.be/EXOL-3JyXMI"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Button size="xl" variant="primary" className="text-uppercase main-button join-now">
-                      <p className="buttonTitle">Watch the Ceremony!</p>
-                    </Button> <br/>
-                  </a>
-                </div>
-              </div> {/* joinButtonWrapper */}
+              
               <div className="vendors">
                 <p className="singleVendor">
                   Hosted at
