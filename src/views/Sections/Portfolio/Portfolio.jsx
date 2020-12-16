@@ -83,14 +83,14 @@ const Portfolio = ({ className, frontmatter }) => {
               </a>
             </p>
             <p>
-              Stay tuned for photos by
+              Photos by
               <a
                 href="https://anaisabelphotography.com/"
                 className="countdownLinks"
                 target="_blank"
                 rel="noreferrer"
               >
-                Ana Isabel
+                Ana Isabel Photography
               </a>
               !
             </p>
@@ -260,7 +260,7 @@ const Portfolio = ({ className, frontmatter }) => {
           </CopyToClipboard>
         </Row>
         <div className="countdownAndVideoDiv">
-          <Row>
+          <Row className="vendorDiv">
             <span className="finishedCountdown">
               <div className="joinButtonWrapper">
                 <div>
@@ -276,7 +276,7 @@ const Portfolio = ({ className, frontmatter }) => {
                 </div>
               </div> {/* joinButtonWrapper */}
               <div className="vendors">
-                <p>
+                <p className="singleVendor">
                   Hosted at
                   <a
                     href="https://www.strathmore.org/mansion"
@@ -286,8 +286,8 @@ const Portfolio = ({ className, frontmatter }) => {
                   >
                     the Mansion at Strathmore
                   </a>
-                </p>
-                <p>
+                </p> {/* singleVendor */}
+                <p className="singleVendor">
                   Officiated by 
                   <a 
                     href="https://elleweds.wixsite.com/elleweds"
@@ -296,8 +296,8 @@ const Portfolio = ({ className, frontmatter }) => {
                     rel="noreferrer">
                       Elle is for Love
                   </a>
-                </p>
-                <p>
+                </p> {/* singleVendor */}
+                <p className="singleVendor">
                   Music provided by
                   <a
                     href="http://cellobosco.com/"
@@ -307,9 +307,18 @@ const Portfolio = ({ className, frontmatter }) => {
                   >
                     Carol Anne Bosco
                   </a>
-                </p>
-                <p>
-                  Stay tuned for photos by
+                  &nbsp;and
+                  <a
+                    href="https://nickmontopoli.com/"
+                    className="countdownLinks"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Nick Montopoli
+                  </a>
+                </p> {/* singleVendor */}
+                <p className="singleVendor">
+                  Photos by
                   <a
                     href="https://anaisabelphotography.com/"
                     className="countdownLinks"
@@ -318,12 +327,11 @@ const Portfolio = ({ className, frontmatter }) => {
                   >
                     Ana Isabel Photography
                   </a>
-                  !
-                </p>
+                </p> {/* singleVendor */}
               </div> {/* vendors */}
             </span> {/* finished countdown */}
-          </Row>
-          <Row>
+          </Row> {/* vendorDiv */}
+          <Row className="videoDiv">
             <a
               href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
               target="_blank"
@@ -351,7 +359,7 @@ const Portfolio = ({ className, frontmatter }) => {
                 </div> {/* middle */}
               </div> {/* container */}
             </a>
-          </Row>
+          </Row> {/* videoDiv */}
         </div> {/* countdownAndVideoDiv */}
       </PageSection>
     </div>

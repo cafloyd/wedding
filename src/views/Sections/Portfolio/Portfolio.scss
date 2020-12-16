@@ -141,6 +141,12 @@
   .vendors {
     justify-content: center;
     margin: 40px;
+    // display: flex;
+    // flex-direction: column;
+    // flex: 1;
+    // .singleVendor {
+    //   flex-wrap: wrap;
+    // }
     .countdownLinks {
       margin-left: 0.25em;
     }
@@ -180,10 +186,10 @@
 // -DESKTOP VIEW
 @media (min-width: 769px) {
   .middle {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
   .image {
     width: 560;
@@ -194,5 +200,11 @@
   .finishedCountdown {
     margin-right: 50px;
     margin-left: 50px;
+  }
+  .vendorDiv {
+    flex: 1;
+  }
+  .videoDiv {
+    flex: 1;
   }
 }

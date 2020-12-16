@@ -22,7 +22,7 @@ const Footer = ({ frontmatter }) => {
     <footer className="footer py-3">
       <Container>
         <Row className="align-items-center text-center">
-          <Col>
+          <Col className="copyright">
             ©&nbsp;
             <a 
               href="https://caitlinfloyd.com/"
@@ -32,7 +32,17 @@ const Footer = ({ frontmatter }) => {
               Caitlin Floyd
             </a>
             , 2020
-          </Col>
+          </Col> {/* copyright */}
+          <Col className="anaIsabel">
+            Photos by&nbsp;
+            <a 
+              href="https://anaisabelphotography.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ana Isabel Photography
+            </a>
+          </Col> {/* anaIsabel */}
         </Row>
       </Container>
     </footer>
