@@ -20,17 +20,18 @@ const Photos = ({ className, frontmatter }) => {
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
-      <Row>
+      <Row id="gallery" data-toggle="modal" data-target="#exampleModal">
         {photos.map(
           ({ content, extraInfo, header, slideNumber, imageFileName, imageFileNameDetail, subheader }) => (
             <PhotoItem
-              key={header}
+              key={slideNumber}
               imageFileName={imageFileName}
               slideNumber={slideNumber}
               header={header}
               subheader={subheader}
               content={content}
               imageFileNameDetail={imageFileNameDetail}
+              photos={photos}
               extraInfo={
                 <ul>
                   {extraInfo.map((ei) => (
@@ -41,7 +42,7 @@ const Photos = ({ className, frontmatter }) => {
             />
           ),
         )}
-      </Row>
+      </Row> {/* photoGallery */}
     </PageSection>
   );
 };

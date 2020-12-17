@@ -7,6 +7,7 @@ import Icon from "components/Icon";
 import PhotoDetailDialog from "components/PhotoDetailDialog";
 
 import "./PhotoItem.scss";
+import "./PhotoDetailDialog.scss"
 
 const PhotoItem = ({
   imageFileName,
@@ -18,6 +19,7 @@ const PhotoItem = ({
   imageFileNameDetail,
   imageAltDetail,
   extraInfo,
+  photos
 }) => {
   const [showDetail, setShowDetail] = React.useState(false);
   const handleShowDetail = React.useCallback(() => {
@@ -38,11 +40,12 @@ const PhotoItem = ({
           onClick={handleShowDetail}
         >
           <Image
-            className="img-fluid"
+            className="img-fluid w-100"
             fileName={imageFileName}
             alt={imageAlt || header || subheader}
-            data-slide-to={slideNumber}
             data-target="#carouselExample"
+            data-slide-to={slideNumber}
+            photos={photos}
           />
           <div className="photo-hover">
             <div className="photo-hover-content">
@@ -50,6 +53,7 @@ const PhotoItem = ({
             </div>
           </div>
         </a>
+        {/* PREVIOUS MODAL EXTRA CONTENT */}
         {/* <div className="photo-caption">
           <h4>{header}</h4>
           {subheader ? <p className="text-muted">{subheader}</p> : null}
@@ -64,6 +68,9 @@ const PhotoItem = ({
         subheader={subheader}
         content={content}
         extraInfo={extraInfo}
+        data-target="#carouselExample"
+        data-slide-to={slideNumber}
+        photos={photos}
       />
     </>
   );
@@ -79,6 +86,7 @@ PhotoItem.propTypes = {
   imageFileNameDetail: PropTypes.string,
   imageAltDetail: PropTypes.string,
   extraInfo: PropTypes.any,
+  photos: PropTypes.object,
 };
 
 PhotoItem.defaultProps = {
@@ -88,6 +96,7 @@ PhotoItem.defaultProps = {
   imageFileNameDetail: "",
   imageAltDetail: "",
   extraInfo: null,
+  photos: null,
 };
 
 export default PhotoItem;
