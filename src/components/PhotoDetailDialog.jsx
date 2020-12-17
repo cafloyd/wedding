@@ -9,6 +9,7 @@ const PhotoDetailDialog = ({
   onHide,
   imageFileName,
   imageAlt,
+  slideNumber,
   header,
   subheader,
   content,
@@ -50,6 +51,11 @@ const PhotoDetailDialog = ({
 
 
   <div 
+    {...restProps}
+    // onHide={onHide}
+    size="lg"
+    // aria-labelledby="contained-modal-title-vcenter"
+    centered
     className="modal fade" 
     id="exampleModal" 
     tabIndex="-1" 
@@ -95,10 +101,15 @@ const PhotoDetailDialog = ({
             <div 
               className="carousel-item active"
             >
-              <img 
+              {/* <img 
                 className="d-block w-100" 
                 src="/image-1.jpg" 
                 alt="image1" 
+              /> */}
+              <Image 
+                className="d-block w-100 img-fluid"
+                fileName={imageFileName}
+                alt={imageAlt || header || subheader}
               />
             </div> {/* carousel item */}
             {/* <div className="carousel-item">
@@ -167,6 +178,7 @@ PhotoDetailDialog.propTypes = {
   onHide: PropTypes.func,
   imageFileName: PropTypes.string,
   imageAlt: PropTypes.string,
+  slideNumber: PropTypes.string,
   header: PropTypes.string,
   subheader: PropTypes.string,
   content: PropTypes.string,
@@ -177,6 +189,7 @@ PhotoDetailDialog.defaultProps = {
   onHide: null,
   imageFileName: "",
   imageAlt: null,
+  slideNumber: 0,
   header: "",
   subheader: "",
   content: "",
