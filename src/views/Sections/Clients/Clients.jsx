@@ -22,10 +22,11 @@ const Photos = ({ className, frontmatter }) => {
       </Row>
       <Row>
         {photos.map(
-          ({ content, extraInfo, header, imageFileName, imageFileNameDetail, subheader }) => (
+          ({ content, extraInfo, header, slideNumber, imageFileName, imageFileNameDetail, subheader }) => (
             <PhotoItem
               key={header}
               imageFileName={imageFileName}
+              slideNumber={slideNumber}
               header={header}
               subheader={subheader}
               content={content}

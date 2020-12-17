@@ -48,6 +48,7 @@ export const query = graphql`
           photos {
             content
             extraInfo
+            slideNumber
             header
             subheader
             imageFileNameDetail

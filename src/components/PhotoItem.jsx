@@ -11,6 +11,7 @@ import "./PhotoItem.scss";
 const PhotoItem = ({
   imageFileName,
   imageAlt,
+  slideNumber,
   header,
   subheader,
   content,
@@ -32,7 +33,7 @@ const PhotoItem = ({
         <a
           role="button"
           tabIndex={-1}
-          className="photo-link"
+          className="photo-link col-12 col-sm-6 col-lg-3"
           data-toggle="modal"
           onClick={handleShowDetail}
         >
@@ -40,6 +41,8 @@ const PhotoItem = ({
             className="img-fluid"
             fileName={imageFileName}
             alt={imageAlt || header || subheader}
+            data-slide-to={slideNumber}
+            data-target="#carouselExample"
           />
           <div className="photo-hover">
             <div className="photo-hover-content">
@@ -69,6 +72,7 @@ const PhotoItem = ({
 PhotoItem.propTypes = {
   imageFileName: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
+  slideNumber: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   subheader: PropTypes.string,
   content: PropTypes.string,

@@ -14,6 +14,7 @@ photos: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 1.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 1.jpg",
+    slideNumber: "1",
     header: "Threads",
     subheader: "Illustration",
     content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
@@ -22,6 +23,7 @@ photos: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 6.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 6.jpg",
+    slideNumber: "2",
     header: "Explorer",
     subheader: "Graphic Design",
     content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
@@ -30,6 +32,7 @@ photos: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 17.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 17.jpg",
+    slideNumber: "3",
     header: "Finish",
     subheader: "Identity",
     content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
@@ -38,6 +41,7 @@ photos: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 18.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 18.jpg",
+    slideNumber: "4",
     header: "Lines",
     subheader: "Branding",
     content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
@@ -46,6 +50,7 @@ photos: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 19.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 19.jpg",
+    slideNumber: "5",
     header: "Southwest",
     subheader: "Website Design",
     content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
@@ -54,6 +59,7 @@ photos: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 26.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 26.jpg",
+    slideNumber: "6",
     header: "Window",
     subheader: "Photography",
     content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
