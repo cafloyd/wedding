@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PhotoItem from "components/PhotoItem";
 import PageSection from "components/PageSection";
@@ -13,12 +13,30 @@ const Photos = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header: rootHeader, subheader: rootSubHeader, photos } = frontmatter;
+  // FOR TEMPLATE: add "subheader: rootSubHeader" inside const below:
+  const { anchor, header: rootHeader, photos } = frontmatter;
 
   return (
     <PageSection className={clsx("photos-section", className)} id={anchor}>
-      <Row>
+        {/* REINSTATE FOR TEMPLATE */}
+        {/* <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+      </Row> */}
+      <Row>
+        <SectionHeader header={rootHeader} />
+      </Row>
+      <Row>
+        <Col>
+          <h3 className="section-subheading text-muted">All photos provided by&nbsp;
+            <a
+              href="https://anaisabelphotography.com/"
+              target="_blank"
+              rel="noreferrer"
+              >
+              Ana Isabel Photography
+            </a>
+          </h3>
+        </Col>
       </Row>
       <Row id="gallery" data-toggle="modal" data-target="#exampleModal">
         {photos.map(
