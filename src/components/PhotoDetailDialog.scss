@@ -2,6 +2,11 @@
   transition: 0.3s;
 }
 
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
 #gallery.custom {
   padding: 0 15px;
 
@@ -20,6 +25,7 @@
   .modal-content {
     background: none;
     border: none;
+    // width: auto;
   }
 
   .modal-header {
@@ -34,9 +40,9 @@
       top: 3px;
       border: solid 2px white;
 
-      // @media (min-width: $bootstrap-lg) {
-      //   top: 15px;
-      // }
+      @media (min-width: $bootstrap-lg) {
+        top: 15px;
+      }
 
       &:hover {
         top: 3px;
@@ -63,21 +69,21 @@
       background: white;
       border-radius: 3px 10px;
 
-      // @media (min-width: $bootstrap-md) {
-      //   border-radius: 3px 30px;
-      //   height: 100px;
-      //   width: 100px;
-      // }
+      @media (min-width: $bootstrap-md) {
+        border-radius: 3px 30px;
+        height: 100px;
+        width: 100px;
+      }
     }
 
     &::before {
       top: -5px;
       left: -5px;
 
-      // @media (min-width: $bootstrap-md) {
-      //   top: -15px;
-      //   left: -15px;
-      // }
+      @media (min-width: $bootstrap-md) {
+        top: -15px;
+        left: -15px;
+      }
     }
 
     &::after {
@@ -85,20 +91,23 @@
       right: -5px;
       z-index: -1;
 
-      // @media (min-width: $bootstrap-md) {
-      //   bottom: -15px;
-      //   right: -15px;
-      // }
+      @media (min-width: $bootstrap-md) {
+        bottom: -15px;
+        right: -15px;
+      }
     }
+    // .modal-photo {
+    //     width: 75%;
+    // }
   }
 
   .modal-footer {
     border: none;
     margin-top: 60px;
 
-    // @media (min-width: $bootstrap-lg) {
-    //   margin-top: 40px;
-    // }
+    @media (min-width: $bootstrap-lg) {
+      margin-top: 40px;
+    }
 
     .btn {
       margin: auto;
@@ -124,11 +133,11 @@
     opacity: 1;
     bottom: -52px;
 
-    // @media (min-width: $bootstrap-md) {
-    //   top: 0;
-    //   opacity: 0.5;
-    //   bottom: 0;
-    // }
+    @media (min-width: $bootstrap-md) {
+      top: 0;
+      opacity: 0.5;
+      bottom: 0;
+    }
   }
 
   .carousel-control-next-icon,
@@ -137,24 +146,24 @@
     width: 30px;
   }
 
-  //   .carousel-control-prev {
-  //     @media (min-width: $bootstrap-md) {
-  //       left: -90px;
-  //     }
-  //   }
+  .carousel-control-prev {
+    @media (min-width: $bootstrap-md) {
+      left: -90px;
+    }
+  }
 
-  //   .carousel-control-next {
-  //     @media (min-width: $bootstrap-md) {
-  //       right: -90px;
-  //     }
-  //   }
+  .carousel-control-next {
+    @media (min-width: $bootstrap-md) {
+      right: -90px;
+    }
+  }
 
   .carousel-indicators {
     bottom: -60px;
 
-    // @media (min-width: $bootstrap-lg) {
-    //   bottom: -30px;
-    // }
+    @media (min-width: $bootstrap-lg) {
+      bottom: -30px;
+    }
 
     li {
       height: 30px;
@@ -162,9 +171,9 @@
       background: none;
       border: solid 2px white;
 
-      //   @media (min-width: $bootstrap-lg) {
-      //     height: 10px;
-      //   }
+      @media (min-width: $bootstrap-lg) {
+        height: 10px;
+      }
 
       &:hover {
         background: white;
