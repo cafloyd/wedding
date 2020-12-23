@@ -38,7 +38,7 @@ const Photos = ({ className, frontmatter }) => {
           </h3>
         </Col>
       </Row>
-      <Row id="gallery" data-toggle="modal" data-target="#exampleModal">
+      <Row id="gallery" data-toggle="modal" data-target="#photoGallery">
         {photos.map(
           ({ content, extraInfo, header, slideNumber, imageFileName, imageFileNameDetail, subheader }) => (
             <PhotoItem

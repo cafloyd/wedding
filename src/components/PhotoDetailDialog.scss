@@ -21,7 +21,7 @@ $bootstrap-xl: 1200px;
   }
 }
 
-#exampleModal.custom {
+#photoGallery.custom {
   .modal-content {
     background: none;
     border: none;
@@ -96,9 +96,6 @@ $bootstrap-xl: 1200px;
         right: -15px;
       }
     }
-    // .modal-photo {
-    //     width: 75%;
-    // }
   }
 
   .modal-footer {

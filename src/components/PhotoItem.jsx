@@ -37,14 +37,14 @@ const PhotoItem = ({
           tabIndex={-1}
           className="photo-link col-12 col-sm-6 col-lg-3"
           data-toggle="modal"
+          data-target="#photoCarousel"
+          data-slide-to={slideNumber}
           onClick={handleShowDetail}
         >
           <Image
             className="img-fluid w-100"
             fileName={imageFileName}
             alt={imageAlt || header || subheader}
-            data-target="#carouselExample"
-            data-slide-to={slideNumber}
             photos={photos}
           />
           <div className="photo-hover">
@@ -68,7 +68,7 @@ const PhotoItem = ({
         subheader={subheader}
         content={content}
         extraInfo={extraInfo}
-        data-target="#carouselExample"
+        data-target="#photoCarousel"
         data-slide-to={slideNumber}
         photos={photos}
       />
