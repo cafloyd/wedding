@@ -54,6 +54,22 @@ $bootstrap-xl: 1200px;
     }
   }
 
+  .photoCaption {
+    margin: 100px;
+    padding: 100px;
+    text-align: justify;
+  }
+  .photoCaptionWrapper {
+    margin: 100px;
+    padding: 100px;
+  }
+  .captionMargin {
+    width: 0.5;
+  }
+  .caption {
+    width: 1.5;
+  }
+
   .modal-body {
     padding: 0;
     border: none;

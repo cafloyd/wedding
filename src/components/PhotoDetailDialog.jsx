@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Row, Col } from "react-bootstrap";
 import Image from "components/Image";
 import Icon from "./Icon";
 
@@ -72,14 +72,31 @@ const PhotoDetailDialog = ({
                       />
                     </div> // carousel-item
                   ))
-              ) : null}
+              ) : null} {/* previousItems.map */}
                 <div className="carousel-item active">
-                  <Image
-                    className="img-fluid d-block"
-                    fileName={imageFileName}
-                    alt={imageAlt || header || subheader}
-                  />
-                  <p>All photographs courtesy of Ana Isabel Photography. Please see her website for downloads!</p>
+                  <div className="container-fluid">
+                    <Image
+                      className="img-fluid d-block"
+                      fileName={imageFileName}
+                      alt={imageAlt || header || subheader}
+                    />
+                    <Row>
+                      <Col className="captionMargin"/>
+                      <Col className="caption col-12">
+                        <p className="photoCaption">Photography provided by&nbsp;
+                          <a 
+                            href="https://anaisabelphotography.com/"
+                            className="countdownLinks"
+                            target="_blank"
+                            rel="noreferrer"
+                            >
+                            Ana Isabel Photography
+                          </a>.
+                        </p>
+                      </Col>
+                      <Col className="captionMargin"/>
+                    </Row>
+                  </div> {/* container */}
                 </div> {/* carousel-item active */}
                 { nextItems.length > 0 ? (
                   nextItems.map(
@@ -93,7 +110,7 @@ const PhotoDetailDialog = ({
                       </div> // carousel-item
                     ))
                   ) : null
-                }
+                } {/* nextItems.map */}
               </div> {/* carousel-inner */}
             </div> {/* carousel slide */}
             <a className="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
