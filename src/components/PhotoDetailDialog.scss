@@ -1,6 +1,15 @@
 * {
   transition: 0.3s;
 }
+.photoCaptionWrapper {
+
+}
+
+.photoCaption {
+  text-align: center;
+  padding-top: 15px;
+  font-style: italic;
+}
 
 $bootstrap-sm: 576px;
 $bootstrap-md: 768px;
@@ -52,22 +61,6 @@ $bootstrap-xl: 1200px;
     span {
       color: white;
     }
-  }
-
-  .photoCaption {
-    margin: 100px;
-    padding: 100px;
-    text-align: justify;
-  }
-  .photoCaptionWrapper {
-    margin: 100px;
-    padding: 100px;
-  }
-  .captionMargin {
-    width: 0.5;
-  }
-  .caption {
-    width: 1.5;
   }
 
   .modal-body {

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Modal, Button, Row, Col } from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 import Image from "components/Image";
 import Icon from "./Icon";
 
@@ -47,96 +47,88 @@ const PhotoDetailDialog = ({
       role="dialog"
       aria-hidden="true"
     >
-      <div className="modal-dialog" role="document">
-        <div className="modal-content">
-          <Modal.Header>
-            <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={onHide}>
-              <span aria-hidden="true">x</span>
-            </button>
-          </Modal.Header>
-          <Modal.Body> {/* className="mx-auto" */}
-            <div
-              id="photoCarousel" 
-              className="carousel slide" 
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-              {previousItems.length > 0 ? (
-                previousItems.map(
-                  (previousItem) => (
-                    <div className="carousel-item" key={previousItem.slideNumber}>
-                      <Image 
-                        className="img-fluid d-block"
-                        fileName={previousItem.imageFileName}
-                        alt={ previousItem.imageAlt }
-                      />
-                    </div> // carousel-item
-                  ))
-              ) : null} {/* previousItems.map */}
-                <div className="carousel-item active">
-                  <div className="container-fluid">
-                    <Image
+      <Modal.Header>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={onHide}>
+          <span aria-hidden="true">x</span>
+        </button>
+      </Modal.Header>
+      <Modal.Body> {/* className="mx-auto" */}
+        <div
+          id="photoCarousel" 
+          className="carousel slide" 
+          data-ride="carousel"
+        >
+          <div className="carousel-inner">
+          {previousItems.length > 0 ? (
+            previousItems.map(
+              (previousItem) => (
+                <div className="carousel-item" key={previousItem.slideNumber}>
+                  <Image 
+                    className="img-fluid d-block"
+                    fileName={previousItem.imageFileName}
+                    alt={ previousItem.imageAlt }
+                  />
+                </div> // carousel-item
+              ))
+          ) : null} {/* previousItems.map */}
+            <div className="carousel-item active">
+              <div className="container-fluid">
+                <Image
+                  className="img-fluid d-block"
+                  fileName={imageFileName}
+                  alt={imageAlt || header || subheader}
+                />
+                  <div className="photoCaptionWrapper">
+                    <p className="photoCaption">Photo courtesy&nbsp;
+                      <a 
+                        href="https://anaisabelphotography.com/"
+                        className="countdownLinks"
+                        target="_blank"
+                        rel="noreferrer"
+                        >
+                        Ana Isabel Photography
+                      </a>
+                    </p>
+                  </div>
+              </div> {/* container */}
+            </div> {/* carousel-item active */}
+            { nextItems.length > 0 ? (
+              nextItems.map(
+                (nextItem) => (
+                  <div className="carousel-item" key={nextItem.slideNumber}>
+                    <Image 
                       className="img-fluid d-block"
-                      fileName={imageFileName}
-                      alt={imageAlt || header || subheader}
+                      fileName={nextItem.imageFileName}
+                      alt={ nextItem.imageAlt }
                     />
-                    <Row>
-                      <Col className="captionMargin"/>
-                      <Col className="caption col-12">
-                        <p className="photoCaption">Photography provided by&nbsp;
-                          <a 
-                            href="https://anaisabelphotography.com/"
-                            className="countdownLinks"
-                            target="_blank"
-                            rel="noreferrer"
-                            >
-                            Ana Isabel Photography
-                          </a>.
-                        </p>
-                      </Col>
-                      <Col className="captionMargin"/>
-                    </Row>
-                  </div> {/* container */}
-                </div> {/* carousel-item active */}
-                { nextItems.length > 0 ? (
-                  nextItems.map(
-                    (nextItem) => (
-                      <div className="carousel-item" key={nextItem.slideNumber}>
-                        <Image 
-                          className="img-fluid d-block"
-                          fileName={nextItem.imageFileName}
-                          alt={ nextItem.imageAlt }
-                        />
-                      </div> // carousel-item
-                    ))
-                  ) : null
-                } {/* nextItems.map */}
-              </div> {/* carousel-inner */}
-            </div> {/* carousel slide */}
-            <a className="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
-              <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true" />
-              <span className="sr-only">Next</span>
-            </a>
-          </Modal.Body>
-          {/* PREVIOUS MODAL FOOTER */}
-          <Modal.Footer>
-            <div className="mx-auto">
-              <Button variant="primary" onClick={onHide}>
-                <Icon iconName="CloseIcon" />
-                &nbsp; Close
-              </Button>
-            </div>
-          </Modal.Footer>
-          {/* MODAL FOOTER FROM CSS TRICKS EXAMPLE */}
-          {/* <Modal.Footer>
-            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-          </Modal.Footer> */}
-        </div> {/* modal-content */}
-      </div> {/* modal-dialog */}
+                  </div> // carousel-item
+                ))
+              ) : null
+            } {/* nextItems.map */}
+          </div> {/* carousel-inner */}
+        </div> {/* carousel slide */}
+        <a className="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="sr-only">Next</span>
+        </a>
+      </Modal.Body>
+      {/* PREVIOUS MODAL FOOTER */}
+      <Modal.Footer>
+        <div className="mx-auto">
+          <Button variant="primary" onClick={onHide}>
+            <Icon iconName="CloseIcon" />
+            &nbsp; Close
+          </Button>
+        </div>
+      </Modal.Footer>
+      {/* MODAL FOOTER FROM CSS TRICKS EXAMPLE */}
+      {/* <Modal.Footer>
+        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+      </Modal.Footer> */}
     </Modal>
   );
 };
