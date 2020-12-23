@@ -19,72 +19,88 @@ const PhotoDetailDialog = ({
   photos,
   ...restProps
 }) => {
+  const currentIndex = slideNumber - 1
+  const previousItems = function() {
+    if (currentIndex > 0) {
+      return photos.slice(0, currentIndex)
+    }
+    return []
+  }
+  const currentItem = photos[currentIndex]
+  const nextItems = function() {
+    if (currentIndex <= photos.length){
+      return photos.slice(currentIndex + 1)
+    }
+    return []
+  }
+
   return (
     <Modal
       {...restProps}
       onHide={onHide}
       size="lg"
-      // aria-labelledby="contained-modal-title-vcenter"
+      aria-labelledby="contained-modal-title-vcenter"
       centered
       className="modal fade"
-      id="exampleModal"
+      id="photoGallery"
       tabIndex="-1"
       role="dialog"
       aria-hidden="true"
     >
       <div className="modal-dialog" role="document">
         <div className="modal-content">
-          {/* PREVIOUS MODAL HEADER */}
-          {/* <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title-vcenter">{header}</Modal.Title>
-          </Modal.Header> */}
-          {/* MODAL HEADER FROM CSS TRICKS EXAMPLE */}
           <Modal.Header>
             <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={onHide}>
               <span aria-hidden="true">x</span>
             </button>
           </Modal.Header>
-          <Modal.Body className="mx-auto">
-            {/* PREVIOUS MODAL BODY CONTENT */}
-            {/* <p className="item-intro text-muted">{subheader}</p>
-            <Image
-              className="img-fluid d-block"
-              fileName={imageFileName}
-              alt={imageAlt || header || subheader}
-            />
-            <p>{content}</p> */}
+          <Modal.Body> {/* className="mx-auto" */}
             <div
-              id="carouselExample" 
+              id="photoCarousel" 
               className="carousel slide" 
               data-ride="carousel"
             >
               <div className="carousel-inner">
+              {previousItems.length > 0 ? (
+                previousItems.map(
+                  (previousItem) => (
+                    <div className="carousel-item" key={previousItem.slideNumber}>
+                      <Image 
+                        className="img-fluid d-block"
+                        fileName={previousItem.imageFileName}
+                        alt={ previousItem.imageAlt }
+                      />
+                    </div> // carousel-item
+                  ))
+              ) : null}
                 <div className="carousel-item active">
                   <Image
                     className="img-fluid d-block"
                     fileName={imageFileName}
                     alt={imageAlt || header || subheader}
                   />
-                  <p>{content}</p>
+                  <p>All photographs courtesy of Ana Isabel Photography. Please see her website for downloads!</p>
                 </div> {/* carousel-item active */}
-                {photos.map(
-                  () => (
-                    <div className="carousel-item" key={slideNumber}>
-                      <Image 
-                        className="img-fluid d-block"
-                        fileName={imageFileName}
-                        alt={ imageAlt }
-                      />
-                    </div> // carousel-item
-                  )
-                )}
+                { nextItems.length > 0 ? (
+                  nextItems.map(
+                    (nextItem) => (
+                      <div className="carousel-item" key={nextItem.slideNumber}>
+                        <Image 
+                          className="img-fluid d-block"
+                          fileName={nextItem.imageFileName}
+                          alt={ nextItem.imageAlt }
+                        />
+                      </div> // carousel-item
+                    ))
+                  ) : null
+                }
               </div> {/* carousel-inner */}
             </div> {/* carousel slide */}
-            <a className="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true" />
               <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <a className="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
               <span className="carousel-control-next-icon" aria-hidden="true" />
               <span className="sr-only">Next</span>
             </a>
