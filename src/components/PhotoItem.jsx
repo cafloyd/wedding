@@ -35,7 +35,7 @@ const PhotoItem = ({
         <a
           role="button"
           tabIndex={-1}
-          className="photo-link col-12 col-sm-6 col-lg-3"
+          className="photo-link"
           data-toggle="modal"
           data-target="#photoCarousel"
           data-slide-to={slideNumber}
