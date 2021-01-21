@@ -40,23 +40,13 @@ const Photos = ({ className, frontmatter }) => {
       </Row>
       <Row id="gallery" data-toggle="modal" data-target="#photoGallery">
         {photos.map(
-          ({ content, extraInfo, header, slideNumber, imageFileName, imageFileNameDetail, subheader }) => (
+          ({ slideNumber, imageFileName, imageFileNameDetail }) => (
             <PhotoItem
               key={slideNumber}
               imageFileName={imageFileName}
               slideNumber={slideNumber}
-              header={header}
-              subheader={subheader}
-              content={content}
               imageFileNameDetail={imageFileNameDetail}
               photos={photos}
-              extraInfo={
-                <ul>
-                  {extraInfo.map((ei) => (
-                    <li key={ei}>{ei}</li>
-                  ))}
-                </ul>
-              }
             />
           ),
         )}

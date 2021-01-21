@@ -46,11 +46,7 @@ export const query = graphql`
           jumpToAnchorText
           menuText
           photos {
-            content
-            extraInfo
             slideNumber
-            header
-            subheader
             imageFileNameDetail
             imageFileName
           }

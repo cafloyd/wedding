@@ -13,12 +13,8 @@ const PhotoItem = ({
   imageFileName,
   imageAlt,
   slideNumber,
-  header,
-  subheader,
-  content,
   imageFileNameDetail,
   imageAltDetail,
-  extraInfo,
   photos
 }) => {
   const [showDetail, setShowDetail] = React.useState(false);
@@ -44,7 +40,7 @@ const PhotoItem = ({
           <Image
             className="img-fluid w-100"
             fileName={imageFileName}
-            alt={imageAlt || header || subheader}
+            alt={imageAlt}
             photos={photos}
           />
           <div className="photo-hover">
@@ -64,10 +60,6 @@ const PhotoItem = ({
         onHide={handleHideDetail}
         imageFileName={imageFileNameDetail || imageFileName}
         imageAlt={imageAltDetail || imageAlt}
-        header={header}
-        subheader={subheader}
-        content={content}
-        extraInfo={extraInfo}
         data-target="#photoCarousel"
         data-slide-to={slideNumber}
         photos={photos}
@@ -80,22 +72,15 @@ PhotoItem.propTypes = {
   imageFileName: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
   slideNumber: PropTypes.string.isRequired,
-  header: PropTypes.string.isRequired,
-  subheader: PropTypes.string,
-  content: PropTypes.string,
   imageFileNameDetail: PropTypes.string,
   imageAltDetail: PropTypes.string,
-  extraInfo: PropTypes.any,
   photos: PropTypes.object,
 };
 
 PhotoItem.defaultProps = {
   imageAlt: "",
-  subheader: "",
-  content: "",
   imageFileNameDetail: "",
   imageAltDetail: "",
-  extraInfo: null,
   photos: null,
 };
 
