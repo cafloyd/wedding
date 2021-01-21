@@ -1,0 +1,17 @@
+.buttonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+.heroButton {
+    
+}
+
+@media (max-width: 768px) {
+    .spacer {
+        margin-top: 1em;
+        width: 100%;
+    }
+    
+}
