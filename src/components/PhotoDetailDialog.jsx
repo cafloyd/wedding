@@ -107,14 +107,14 @@ const PhotoDetailDialog = ({
             } {/* nextItems.map */}
           </div> {/* carousel-inner */}
         </div> {/* carousel slide */}
-        <a className="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+        {/* <a className="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true" />
           <span className="sr-only">Previous</span>
         </a>
         <a className="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="sr-only">Next</span>
-        </a>
+        </a> */}
       </Modal.Body>
       {/* PREVIOUS MODAL FOOTER */}
       <Modal.Footer>
