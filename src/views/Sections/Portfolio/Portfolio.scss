@@ -72,64 +72,7 @@
     opacity: 1;
   }
 
-  // -COUNTDOWN
-  .countdownIntro {
-    font-size: 30px;
-    text-align: center;
-    @include script-font;
-  }
-  .countdownWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    margin-top: 0px;
-    justify-content: center;
-    .countdownSection {
-      flex: 1;
-      display: flex;
-      align-content: stretch;
-      .countWrapper {
-        flex: 1;
-        border: 5px solid #dee2e6;
-        border-radius: 20px;
-        background-color: #f8f9fa;
-        color: #868e96;
-        margin: 5px;
-        padding: 10px;
-        width: 85px;
-        justify-content: center;
-        justify-items: center;
-        box-shadow: 5px 5px #e9ecef;
-        .count {
-          font-size: 40px;
-          @include script-font;
-          text-align: center;
-        }
-        .unit {
-          text-align: center;
-          font-size: 16px;
-        }
-      }
-    }
-  }
-  .instaWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px;
-    .spacedCountdownLinks {
-      margin-left: 0.25em;
-      margin-right: 0.25em;
-    }
-  }
 
-  // -T MINUS 15
-  .countdownIntro {
-    font-size: 30px;
-    text-align: center;
-    @include script-font;
-    margin-bottom: 35px;
-  }
   .joinButtonWrapper {
     display: flex;
     flex-wrap: wrap;
@@ -142,12 +85,6 @@
   .vendors {
     justify-content: center;
     margin: 40px;
-    // display: flex;
-    // flex-direction: column;
-    // flex: 1;
-    // .singleVendor {
-    //   flex-wrap: wrap;
-    // }
     .countdownLinks {
       margin-left: 0.25em;
     }
