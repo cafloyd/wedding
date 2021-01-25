@@ -34,10 +34,6 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
           content
           copyright
           header
@@ -50,8 +46,6 @@ export const query = graphql`
             imageFileNameDetail
             imageFileName
           }
-          privacyHref
-          privacyText
           social {
             facebook
             github
@@ -76,8 +70,6 @@ export const query = graphql`
             }
             subheader
           }
-          termsHref
-          termsText
           title
           timeline {
             content

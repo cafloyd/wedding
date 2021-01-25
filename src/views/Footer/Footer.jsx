@@ -2,21 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Container, Row, Col } from "react-bootstrap";
-import * as SocialIcons from "components/SocialIcons";
 
 const Footer = ({ frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
-  const {
-    copyright,
-    privacyHref,
-    privacyText,
-    termsHref,
-    termsText,
-    social: { facebook, github, linkedin, medium, twitter },
-  } = frontmatter;
+  const { copyright } = frontmatter;
 
   return (
     <footer className="footer py-3">

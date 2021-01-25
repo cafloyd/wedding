@@ -14,7 +14,6 @@ const Top = ({ frontmatter }) => {
   const { header, subheader, imageFileName, jumpToAnchor } = frontmatter;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const scrollToSection = useSmoothScrollTo(jumpToAnchor);
-  // const openYoutube = (window.open('https://www.youtube.com/watch?v=EXOL-3JyXMI&t=3660s'))
 
   const extraInfoPart = (
     <div className="buttonsWrapper">
