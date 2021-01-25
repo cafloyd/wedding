@@ -78,7 +78,7 @@ const PhotoDetailDialog = ({
                   fileName={imageFileName}
                   alt={imageAlt || header || subheader}
                 />
-                  <div className="photoCaptionWrapper">
+                  <div>
                     <p className="photoCaption">Photo courtesy&nbsp;
                       <a 
                         href="https://anaisabelphotography.com/"
