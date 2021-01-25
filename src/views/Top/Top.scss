@@ -6,19 +6,19 @@
     .individButtonWrapper {
         display: flex;
         flex: 1;
-    }
-    .hero-button {
-        flex: 1;
-        a {
-            color: black;
-            width: 100%;
-        }
-        a:hover {
-            color: white;
-            text-decoration: none;
-        }
-        p {
-            width: 100%;
+        .hero-button {
+            flex: 1;
+            a {
+                color: black;
+                width: 100%;
+            }
+            a:hover {
+                color: white;
+                text-decoration: none;
+            }
+            p {
+                width: 100%;
+            }
         }
     }
 }
