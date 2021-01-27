@@ -17,8 +17,14 @@
 }
 
 @media (max-width: 992px){
+    .creditWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .credit {
         flex-direction: row;
+        // font-size: 12pt;
     }
     .socials {
         margin-top: .5em;
