@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Row, Col } from "react-bootstrap";
-import TeamMember from "components/TeamMember";
+import TeamMember from "components/Charity";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
-import "./Team.scss";
+import "./Giving.scss";
 
-const Team = ({ className, frontmatter }) => {
+const Giving = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
@@ -42,14 +42,14 @@ const Team = ({ className, frontmatter }) => {
   );
 };
 
-Team.propTypes = {
+Giving.propTypes = {
   className: PropTypes.string,
   frontmatter: PropTypes.object,
 };
 
-Team.defaultProps = {
+Giving.defaultProps = {
   className: null,
   frontmatter: null,
 };
 
-export default Team;
+export default Giving;

@@ -9,9 +9,9 @@ import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 import Youtube from "content/assets/images/portfolio/Youtube.png";
 import YoutubeHover from "content/assets/images/portfolio/YoutubeHover.png";
-import "./Portfolio.scss";
+import "./Ceremony.scss";
 
-const Portfolio = ({ className, frontmatter }) => {
+const Ceremony = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
@@ -104,7 +104,7 @@ const Portfolio = ({ className, frontmatter }) => {
 
   return (
     <div className="outerWrapper">
-      <PageSection className={clsx("portfolio-section", className)} id={anchor}>
+      <PageSection className={clsx("ceremony-section", className)} id={anchor}>
         <Notifications options={{zIndex: 200, top: '50px'}} />
         <Row className="justify-content-center ceremony-header">
           <SectionHeader header={header} subheader={subheader}/>
@@ -217,14 +217,14 @@ const Portfolio = ({ className, frontmatter }) => {
   );
 };
 
-Portfolio.propTypes = {
+Ceremony.propTypes = {
   className: PropTypes.string,
   frontmatter: PropTypes.object,
 };
 
-Portfolio.defaultProps = {
+Ceremony.defaultProps = {
   className: null,
   frontmatter: null,
 };
 
-export default Portfolio;
+export default Ceremony;

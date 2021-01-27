@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import Image from "components/Image";
 import * as SocialIcons from "components/SocialIcons";
 
-import "./TeamMember.scss";
+import "./Charity.scss";
 
-const TeamMember = ({
+const Charity = ({
   imageFileName,
   imageAlt,
   header,
@@ -49,7 +49,7 @@ const TeamMember = ({
   );
 };
 
-TeamMember.propTypes = {
+Charity.propTypes = {
   imageFileName: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
   header: PropTypes.string,
@@ -65,7 +65,7 @@ TeamMember.propTypes = {
   }),
 };
 
-TeamMember.defaultProps = {
+Charity.defaultProps = {
   imageAlt: null,
   header: "",
   subheader: "",
@@ -80,4 +80,4 @@ TeamMember.defaultProps = {
   },
 };
 
-export default TeamMember;
+export default Charity;

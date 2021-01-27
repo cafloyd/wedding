@@ -7,9 +7,9 @@ import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 import nl2br from "utils/nl2br";
 
-import "./About.scss";
+import "./Story.scss";
 
-const About = ({ className, frontmatter }) => {
+const Story = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
@@ -46,14 +46,14 @@ const About = ({ className, frontmatter }) => {
   );
 };
 
-About.propTypes = {
+Story.propTypes = {
   className: PropTypes.string,
   frontmatter: PropTypes.object,
 };
 
-About.defaultProps = {
+Story.defaultProps = {
   className: null,
   frontmatter: null,
 };
 
-export default About;
+export default Story;
