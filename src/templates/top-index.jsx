@@ -41,6 +41,11 @@ export const query = graphql`
           jumpToAnchor
           jumpToAnchorText
           menuText
+          highlights {
+            slideNumber
+            imageFileNameDetail
+            imageFileName
+          }
           photos {
             slideNumber
             imageFileNameDetail

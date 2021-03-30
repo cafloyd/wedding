@@ -2,7 +2,7 @@
 anchor: "Photos"
 header: "Photographs"
 subheader: "All photographs provided by Ana Isabel Photography"
-photos: [
+highlights: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 1.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 1.jpg",
@@ -18,6 +18,8 @@ photos: [
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 17.jpg",
     slideNumber: "3",
   },
+]
+photos: [
   {
     imageFileName: "photos/Caitlin & Justin (Sneak Peeks) 18.jpg",
     imageFileNameDetail: "photos/Caitlin & Justin (Sneak Peeks) 18.jpg",

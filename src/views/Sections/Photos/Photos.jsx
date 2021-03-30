@@ -14,7 +14,7 @@ const Photos = ({ className, frontmatter }) => {
   }
 
   // FOR TEMPLATE: add "subheader: rootSubHeader" inside const below:
-  const { anchor, header: rootHeader, photos } = frontmatter;
+  const { anchor, header: rootHeader, photos, highlights } = frontmatter;
 
   return (
     <PageSection className={clsx("photos-section", className)} id={anchor}>
@@ -38,6 +38,20 @@ const Photos = ({ className, frontmatter }) => {
           </h3>
         </Col>
       </Row>
+      <Row id="highlights" data-toggle="modal" data-target="#highlightsGallery">
+        {highlights.map(
+          ({ slideNumber, imageFileName, imageFileNameDetail }) => (
+            <PhotoItem
+              key={slideNumber}
+              imageFileName={imageFileName}
+              slideNumber={slideNumber}
+              imageFileNameDetail={imageFileNameDetail}
+              highlights={highlights}
+            />
+          ),
+        )}
+      </Row> {/* highlightsGallery */}
+      <Row>More/Hide</Row>
       <Row id="gallery" data-toggle="modal" data-target="#photoGallery">
         {photos.map(
           ({ slideNumber, imageFileName, imageFileNameDetail }) => (

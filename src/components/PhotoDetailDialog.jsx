@@ -17,22 +17,23 @@ const PhotoDetailDialog = ({
   content,
   extraInfo,
   photos,
+  highlights,
   ...restProps
 }) => {
-  const currentIndex = slideNumber - 1
-  const previousItems = function() {
-    if (currentIndex > 0) {
-      return photos.slice(0, currentIndex)
-    }
-    return []
-  }
-  const currentItem = photos[currentIndex]
-  const nextItems = function() {
-    if (currentIndex <= photos.length){
-      return photos.slice(currentIndex + 1)
-    }
-    return []
-  }
+  // const currentIndex = slideNumber - 1
+  // const previousItems = function() {
+  //   if (currentIndex > 0) {
+  //     return photos.slice(0, currentIndex)
+  //   }
+  //   return []
+  // }
+  // const currentItem = photos[currentIndex]
+  // const nextItems = function() {
+  //   if (currentIndex <= photos.length){
+  //     return photos.slice(currentIndex + 1)
+  //   }
+  //   return []
+  // }
 
   return (
     <Modal
@@ -59,7 +60,7 @@ const PhotoDetailDialog = ({
           data-ride="carousel"
         >
           <div className="carousel-inner">
-          {previousItems.length > 0 ? (
+          {/* {previousItems.length > 0 ? (
             previousItems.map(
               (previousItem) => (
                 <div className="carousel-item" key={previousItem.slideNumber}>
@@ -70,7 +71,8 @@ const PhotoDetailDialog = ({
                   />
                 </div> // carousel-item
               ))
-          ) : null} {/* previousItems.map */}
+          ) : null}  */}
+          {/* previousItems.map */}
             <div className="carousel-item active">
               <div className="container-fluid">
                 <Image
@@ -92,7 +94,7 @@ const PhotoDetailDialog = ({
                   </div>
               </div> {/* container */}
             </div> {/* carousel-item active */}
-            { nextItems.length > 0 ? (
+            {/* { nextItems.length > 0 ? (
               nextItems.map(
                 (nextItem) => (
                   <div className="carousel-item" key={nextItem.slideNumber}>
@@ -104,7 +106,8 @@ const PhotoDetailDialog = ({
                   </div> // carousel-item
                 ))
               ) : null
-            } {/* nextItems.map */}
+            } */}
+             {/* nextItems.map */}
           </div> {/* carousel-inner */}
         </div> {/* carousel slide */}
         {/* <a className="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
@@ -143,6 +146,7 @@ PhotoDetailDialog.propTypes = {
   content: PropTypes.string,
   extraInfo: PropTypes.any,
   photos: PropTypes.object,
+  highlights: PropTypes.object,
 };
 
 PhotoDetailDialog.defaultProps = {
@@ -155,6 +159,7 @@ PhotoDetailDialog.defaultProps = {
   content: "",
   extraInfo: null,
   photos: null,
+  highlights: null,
 };
 
 
