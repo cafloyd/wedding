@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PhotoItem from "components/PhotoItem";
 import PageSection from "components/PageSection";
@@ -51,7 +51,11 @@ const Photos = ({ className, frontmatter }) => {
           ),
         )}
       </Row> {/* highlightsGallery */}
-      <Row>More/Hide</Row>
+      <Row className="justify-content-center">
+        <Button size="xl" variant="primary" className="text-uppercase main-button join-now">
+          <p className="buttonTitle">More/Hide</p>
+        </Button> <br/>
+      </Row>
       <Row id="gallery" data-toggle="modal" data-target="#photoGallery">
         {photos.map(
           ({ slideNumber, imageFileName, imageFileNameDetail }) => (
