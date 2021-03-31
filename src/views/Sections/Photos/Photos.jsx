@@ -8,7 +8,7 @@ import { Row, Col, Button } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PhotoItem from "components/PhotoItem";
 import PageSection from "components/PageSection";
-import "./Clients.scss";
+import "./Photos.scss";
 
 class Photos extends Component {
   constructor() {
@@ -70,25 +70,32 @@ class Photos extends Component {
             ),
           )}
         </Row> {/* highlightsGallery */}
-        <Row className="justify-content-center">
-          <Button size="xl" variant="primary" className="text-uppercase main-button join-now" onClick={this.toggleMore}>
-            <p className="buttonTitle">More/Hide</p>
-          </Button> <br/>
-        </Row>
         {this.state.showMore ? 
-          <Row id="gallery" data-toggle="modal" data-target="#photoGallery">
-            {photos.map(
-              ({ slideNumber, imageFileName, imageFileNameDetail }) => (
-                <PhotoItem
-                  key={slideNumber}
-                  imageFileName={imageFileName}
-                  slideNumber={slideNumber}
-                  imageFileNameDetail={imageFileNameDetail}
-                  photos={photos}
-                />
-              ),
-            )}
-          </Row> : null
+          <div>
+            <Row className="justify-content-center">
+              <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleMore}>
+                <p className="buttonTitle">Hide</p>
+              </Button> <br/>
+            </Row>
+            <Row id="gallery" data-toggle="modal" data-target="#photoGallery">
+              {photos.map(
+                ({ slideNumber, imageFileName, imageFileNameDetail }) => (
+                  <PhotoItem
+                    key={slideNumber}
+                    imageFileName={imageFileName}
+                    slideNumber={slideNumber}
+                    imageFileNameDetail={imageFileNameDetail}
+                    photos={photos}
+                  />
+                ),
+              )}
+            </Row>
+          </div> : 
+          <Row className="justify-content-center">
+            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide show" onClick={this.toggleMore}>
+              <p className="buttonTitle">Show More</p>
+            </Button> <br/>
+          </Row>
         }
       </PageSection>
     );

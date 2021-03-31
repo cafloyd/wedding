@@ -1,4 +1,4 @@
-// Styling for the portfolio section
+// Styling for the photos section
 .photos-section {
   * {
     z-index: 2;
@@ -11,5 +11,13 @@
       text-align: center !important;
       @include serif-font;
     }
+  }
+  .show-hide {
+    margin: 2rem;
+    width: 15rem;
+    // transition: all 1s ease;
+  }
+  .show {
+    transition: all 5s ease 0;
   }
 }
