@@ -46,8 +46,27 @@ export const query = graphql`
             imageFileNameDetail
             imageFileName
           }
-          photos {
-            slideNumber
+          gettingReady {
+            imageFileNameDetail
+            imageFileName
+          }
+          firstLook {
+            imageFileNameDetail
+            imageFileName
+          }
+          ceremony {
+            imageFileNameDetail
+            imageFileName
+          }
+          portraits {
+            imageFileNameDetail
+            imageFileName
+          }
+          reception {
+            imageFileNameDetail
+            imageFileName
+          }
+          familyPortraits {
             imageFileNameDetail
             imageFileName
           }
