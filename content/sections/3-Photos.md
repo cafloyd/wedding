@@ -363,10 +363,6 @@ reception: [
     imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 312.jpg",
   },
   {
-    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 312.jpg",
-    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 312.jpg",
-  },
-  {
     imageFileName: "photos/05-reception/Caitlin & Justin (2020) 320.jpg",
     imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 320.jpg",
   },
@@ -402,22 +398,7 @@ reception: [
     imageFileName: "photos/05-reception/Caitlin & Justin (2020) 355.jpg",
     imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 355.jpg",
   },
-  {
-    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 357.jpg",
-    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 357.jpg",
-  },
-  {
-    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 360.jpg",
-    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 360.jpg",
-  },
-  {
-    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 361.jpg",
-    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 361.jpg",
-  },
-  {
-    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 364.jpg",
-    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 364.jpg",
-  },
+  
   {
     imageFileName: "photos/05-reception/Caitlin & Justin (2020) 369.jpg",
     imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 369.jpg",
@@ -434,6 +415,25 @@ reception: [
     imageFileName: "photos/05-reception/Caitlin & Justin (2020) 375.jpg",
     imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 375.jpg",
   },
+{
+    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 357.jpg",
+    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 357.jpg",
+  },
+  {
+    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 360.jpg",
+    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 360.jpg",
+  },
+  {
+    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 361.jpg",
+    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 361.jpg",
+  },
+  {
+    imageFileName: "photos/05-reception/Caitlin & Justin (2020) 364.jpg",
+    imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 364.jpg",
+  },
+
+
+
   {
     imageFileName: "photos/05-reception/Caitlin & Justin (2020) 379.jpg",
     imageFileNameDetail: "photos/05-reception/Caitlin & Justin (2020) 379.jpg",
