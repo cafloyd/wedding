@@ -1,0 +1,40 @@
+.buttonsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    .individButtonWrapper {
+        display: flex;
+        flex: 1;
+        .hero-button {
+            flex: 1;
+            a {
+                color: black;
+                width: 100%;
+            }
+            a:hover {
+                color: white;
+                text-decoration: none;
+            }
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-button {
+        margin: 5px
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .hero-button {
+        padding: 25px 75px;
+        margin: 25px;
+    }
+    
+}

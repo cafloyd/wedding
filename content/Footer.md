@@ -1,12 +1,9 @@
 ---
 copyright: "© Caitlin Floyd, 2020"
 social: {
-  # twitter: "#",
-  # facebook: "#",
-  # medium: "#"
+    facebook: "AnaIsabelPhoto",
+    instagram: "anaisabelphotography",
+    linkedin: "caitlinfloyd",
+    github: "cafloyd/", 
 }
-privacyText: "Privacy Policy"
-privacyHref: "#!"
-termsText: "Terms of Use"
-termsHref: "#!"
 ---

@@ -1,0 +1,148 @@
+// Styling for the ceremony section
+.ceremony-section {
+  * {
+    z-index: 2;
+  }
+  .ceremony-header {
+    padding-bottom: 20px;
+    .section-subheading {
+      margin-bottom: 10px;
+    }
+  }
+  .hashtag {
+    margin: 20px;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #9ebc9f;
+    border: 3pt solid #9ebc9f;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #e9ecef;
+    &:hover {
+      background-color: darken($primary, 7.5%) !important;
+      border-color: darken($primary, 7.5%) !important;
+      color: white;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(158, 188, 159, 0.5) !important;
+    }
+  }
+  // -VIDEO
+  .countdownAndVideoDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .video-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50%;
+      width: 100%;
+      margin: 20px;
+      .video {
+        align-self: center;
+        width: 100vw;
+      }
+    }
+  }
+
+  // -IMAGE CHANGE ON HOVER
+  .container {
+    position: relative;
+    .image {
+      opacity: 1;
+      display: block;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+    }
+    .middle {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+    }
+  }
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+
+  .joinButtonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    .join-now {
+      padding: 15px 75px;
+    }
+  }
+  .vendors {
+    justify-content: center;
+    margin: 40px;
+    .countdownLinks {
+      margin-left: 0.25em;
+    }
+  }
+
+  // -COUNTDOWN END
+  .finishedCountdown {
+    .countWrapper {
+      border: #e9ecef;
+      color: #ced4da;
+    }
+    .finishedHeader {
+      color: #ced4da;
+    }
+  }
+}
+
+// -MOBILE VIEW
+@media (max-width: 768px) {
+  .video {
+    width: 100%;
+  }
+  .middle {
+    top: 0%;
+    left: 0%;
+  }
+  .image {
+    width: 100%;
+  }
+  .imageHover {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+}
+
+// -DESKTOP VIEW
+@media (min-width: 769px) {
+  .middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .image {
+    width: 560;
+  }
+  .imageHover {
+    width: 560;
+  }
+  .finishedCountdown {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .vendorDiv {
+    flex: 1;
+  }
+  .videoDiv {
+    flex: 1;
+  }
+}

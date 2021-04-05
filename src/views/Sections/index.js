@@ -1,6 +1,4 @@
-export { default as About } from "./About";
-export { default as Contact } from "./Contact";
-export { default as Portfolio } from "./Portfolio";
-export { default as Services } from "./Services";
-export { default as Team } from "./Team";
-export { default as Clients } from "./Clients";
+export { default as Story } from "./Story";
+export { default as Ceremony } from "./Ceremony";
+export { default as Giving } from "./Giving";
+export { default as Photos } from "./Photos";

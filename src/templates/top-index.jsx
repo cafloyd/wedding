@@ -34,32 +34,40 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
           content
           copyright
           header
-          email
           imageFileName
           jumpToAnchor
           jumpToAnchorText
           menuText
-          portfolios {
-            content
-            extraInfo
-            header
-            subheader
+          highlights {
+            slideNumber
             imageFileNameDetail
             imageFileName
           }
-          privacyHref
-          privacyText
-          services {
-            content
-            header
-            iconName
+          gettingReady {
+            imageFileNameDetail
+            imageFileName
+          }
+          firstLook {
+            imageFileNameDetail
+            imageFileName
+          }
+          ceremony {
+            imageFileNameDetail
+            imageFileName
+          }
+          portraits {
+            imageFileNameDetail
+            imageFileName
+          }
+          reception {
+            imageFileNameDetail
+            imageFileName
+          }
+          familyPortraits {
+            imageFileNameDetail
             imageFileName
           }
           social {
@@ -86,9 +94,6 @@ export const query = graphql`
             }
             subheader
           }
-          telephone
-          termsHref
-          termsText
           title
           timeline {
             content

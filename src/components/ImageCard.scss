@@ -1,17 +1,19 @@
 .image-card {
   height: 491px;
   .image {
+    opacity: 0.5;
     height: 491px;
   }
   .no-padding {
     padding: 0;
   }
   .intro-text {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
     .intro-text-no-button {
-      background-color: rgba(73, 80, 87, 0.2);
+      background-color: rgba(73, 80, 87, 0.05);
+      text-shadow: 2px 2px #adb5bd;
       display:inline-block;
       border-radius: 75px;
       padding-top: 20px;
@@ -19,7 +21,7 @@
       padding-right: 20px;
     }
     .intro-heading {
-      font-size: 50px;
+      font-size: 60px;
       font-weight: 300;
       line-height: 50px;
       margin-bottom: 10px;
@@ -34,15 +36,10 @@
     }
   }
   .date {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 200;
     @include heading-font;
-  }
-  .time {
-    font-size: 20px;
-    font-weight: 200;
-    margin-bottom: 115px;
-    @include heading-font;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -52,7 +49,7 @@
       height: 759px;
     }
     .intro-text {
-      padding-top: 100px;
+      padding-top: 200px;
       padding-bottom: 200px;
       .intro-heading {
         font-size: 100px;
@@ -68,10 +65,7 @@
       }
       .date {
         font-size: 45px;
-      }
-      .time {
-        font-size: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 200px;
       }
     }
   }

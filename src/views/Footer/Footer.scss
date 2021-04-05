@@ -1,0 +1,32 @@
+@media (min-width: 992px) {
+    .creditWrapper {
+        display: flex;
+        justify-content: space-between
+    }
+    .credit {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .socials {
+        margin-left: 1em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 992px){
+    .creditWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .credit {
+        flex-direction: row;
+        // font-size: 12pt;
+    }
+    .socials {
+        margin-top: .5em;
+    }
+}
