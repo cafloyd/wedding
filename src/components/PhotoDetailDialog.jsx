@@ -120,14 +120,6 @@ const PhotoDetailDialog = ({
         </a> */}
       </Modal.Body>
       {/* PREVIOUS MODAL FOOTER */}
-      <Modal.Footer>
-        <div className="mx-auto">
-          <Button variant="primary" onClick={onHide}>
-            <Icon iconName="CloseIcon" />
-            &nbsp; Close
-          </Button>
-        </div>
-      </Modal.Footer>
       {/* MODAL FOOTER FROM CSS TRICKS EXAMPLE */}
       {/* <Modal.Footer>
         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
