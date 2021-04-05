@@ -13,11 +13,23 @@
     }
   }
   .show-hide {
-    margin: 2rem;
-    width: 15rem;
-    // transition: all 1s ease;
+    // width: 11rem;
+    border-radius: 0;
+    flex-grow: 1;
   }
-  .show {
-    transition: all 5s ease 0;
+  .selected {
+    color: white;
+  }
+  .button-wrapper {
+    margin: 10 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .photo-section-wrapper {
+    width: 100%;
+  }
+  .caret-up {
+    color: white;
   }
 }
