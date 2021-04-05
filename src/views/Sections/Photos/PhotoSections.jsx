@@ -101,61 +101,22 @@ class PhotoSections extends Component {
         return (
             <div>
                 <Row className="justify-content-center">
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide selected" onClick={this.toggleGettingReady}>
                         <p className="buttonTitle">Getting Ready ^</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFirstLook}>
                         <p className="buttonTitle">First Look v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleCeremony}>
                         <p className="buttonTitle">Ceremony v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.togglePortraits}>
                         <p className="buttonTitle">Portraits v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleReception}>
                         <p className="buttonTitle">Reception v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
-                        <p className="buttonTitle">Family Portraits v</p>
-                    </Button> 
-                    <br/>
-                </Row>
-                <Row id="gallery" data-toggle="modal" data-target="#photoGallery">
-                {gettingReady.map(
-                    ({ slideNumber, imageFileName, imageFileNameDetail }) => (
-                    <PhotoItem
-                        key={slideNumber}
-                        imageFileName={imageFileName}
-                        imageFileNameDetail={imageFileNameDetail}
-                        gettingReady={gettingReady}
-                    />
-                    ),
-                )}
-                </Row>
-            </div> 
-        )
-    }
-    if (this.state.showGettingReady){
-        return (
-            <div>
-                <Row className="justify-content-center">
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
-                        <p className="buttonTitle">Getting Ready ^</p>
-                    </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFirstLook}>
-                        <p className="buttonTitle">First Look v</p>
-                    </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleCeremony}>
-                        <p className="buttonTitle">Ceremony v</p>
-                    </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.togglePortraits}>
-                        <p className="buttonTitle">Portraits v</p>
-                    </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleReception}>
-                        <p className="buttonTitle">Reception v</p>
-                    </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFamilyPortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFamilyPortraits}>
                         <p className="buttonTitle">Family Portraits v</p>
                     </Button> 
                     <br/>
@@ -179,22 +140,22 @@ class PhotoSections extends Component {
         return (
             <div>
                 <Row className="justify-content-center">
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleGettingReady}>
                         <p className="buttonTitle">Getting Ready v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFirstLook}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide selected" onClick={this.toggleFirstLook}>
                         <p className="buttonTitle">First Look ^</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleCeremony}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleCeremony}>
                         <p className="buttonTitle">Ceremony v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.togglePortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.togglePortraits}>
                         <p className="buttonTitle">Portraits v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleReception}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleReception}>
                         <p className="buttonTitle">Reception v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFamilyPortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFamilyPortraits}>
                         <p className="buttonTitle">Family Portraits v</p>
                     </Button> 
                     <br/>
@@ -218,22 +179,22 @@ class PhotoSections extends Component {
         return (
             <div>
                 <Row className="justify-content-center">
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleGettingReady}>
                         <p className="buttonTitle">Getting Ready v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFirstLook}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFirstLook}>
                         <p className="buttonTitle">First Look v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleCeremony}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide selected" onClick={this.toggleCeremony}>
                         <p className="buttonTitle">Ceremony ^</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.togglePortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.togglePortraits}>
                         <p className="buttonTitle">Portraits v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleReception}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleReception}>
                         <p className="buttonTitle">Reception v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFamilyPortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFamilyPortraits}>
                         <p className="buttonTitle">Family Portraits v</p>
                     </Button> 
                     <br/>
@@ -257,22 +218,22 @@ class PhotoSections extends Component {
         return (
             <div>
                 <Row className="justify-content-center">
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleGettingReady}>
                         <p className="buttonTitle">Getting Ready v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFirstLook}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFirstLook}>
                         <p className="buttonTitle">First Look v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleCeremony}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleCeremony}>
                         <p className="buttonTitle">Ceremony v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.togglePortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide selected" onClick={this.togglePortraits}>
                         <p className="buttonTitle">Portraits ^</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleReception}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleReception}>
                         <p className="buttonTitle">Reception v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFamilyPortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFamilyPortraits}>
                         <p className="buttonTitle">Family Portraits v</p>
                     </Button> 
                     <br/>
@@ -296,22 +257,22 @@ class PhotoSections extends Component {
         return (
             <div>
                 <Row className="justify-content-center">
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleGettingReady}>
                         <p className="buttonTitle">Getting Ready v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFirstLook}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFirstLook}>
                         <p className="buttonTitle">First Look v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleCeremony}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleCeremony}>
                         <p className="buttonTitle">Ceremony v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.togglePortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.togglePortraits}>
                         <p className="buttonTitle">Portraits v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleReception}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide selected" onClick={this.toggleReception}>
                         <p className="buttonTitle">Reception ^</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFamilyPortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFamilyPortraits}>
                         <p className="buttonTitle">Family Portraits v</p>
                     </Button> 
                     <br/>
@@ -335,22 +296,22 @@ class PhotoSections extends Component {
         return (
             <div>
                 <Row className="justify-content-center">
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleGettingReady}>
                         <p className="buttonTitle">Getting Ready v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFirstLook}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFirstLook}>
                         <p className="buttonTitle">First Look v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleCeremony}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleCeremony}>
                         <p className="buttonTitle">Ceremony v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.togglePortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.togglePortraits}>
                         <p className="buttonTitle">Portraits v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleReception}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleReception}>
                         <p className="buttonTitle">Reception v</p>
                     </Button> 
-                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFamilyPortraits}>
+                    <Button size="xl" variant="primary" className="text-uppercase main-button show-hide selected" onClick={this.toggleFamilyPortraits}>
                         <p className="buttonTitle">Family Portraits ^</p>
                     </Button> 
                     <br/>
@@ -372,22 +333,22 @@ class PhotoSections extends Component {
     }
     return (
         <Row className="justify-content-center">
-            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleGettingReady}>
+            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleGettingReady}>
                 <p className="buttonTitle">Getting Ready v</p>
             </Button> 
-            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFirstLook}>
+            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFirstLook}>
                 <p className="buttonTitle">First Look v</p>
             </Button> 
-            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleCeremony}>
+            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleCeremony}>
                 <p className="buttonTitle">Ceremony v</p>
             </Button> 
-            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.togglePortraits}>
+            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.togglePortraits}>
                 <p className="buttonTitle">Portraits v</p>
             </Button> 
-            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleReception}>
+            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleReception}>
                 <p className="buttonTitle">Reception v</p>
             </Button> 
-            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide hide" onClick={this.toggleFamilyPortraits}>
+            <Button size="xl" variant="primary" className="text-uppercase main-button show-hide" onClick={this.toggleFamilyPortraits}>
                 <p className="buttonTitle">Family Portraits v</p>
             </Button> 
             <br/>
