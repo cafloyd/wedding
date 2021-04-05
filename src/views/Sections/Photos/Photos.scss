@@ -16,6 +16,11 @@
     border-radius: 0;
     flex-grow: 1;
   }
+  p.buttonTitle {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   .selected {
     color: white;
     background-color: darken($primary, 7.5%);
