@@ -524,10 +524,6 @@ familyPortraits: [
     imageFileName: "photos/06-family-portraits/Caitlin & Justin (2020) 474.jpg",
     imageFileNameDetail: "photos/06-family-portraits/Caitlin & Justin (2020) 474.jpg",
   },
-  {
-    imageFileName: "photos/06-family-portraits/Caitlin & Justin (2020) 475.jpg",
-    imageFileNameDetail: "photos/06-family-portraits/Caitlin & Justin (2020) 475.jpg",
-  },
 ]
 
 ---
