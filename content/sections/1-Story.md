@@ -49,7 +49,7 @@ timeline: [
     imageFileName: "story/8.png",
     header: "October 1, 2020",
     subheader: "We get engaged",
-    content: "As we picnicked in Washington Square Park, blocks away from where we first met in Philadelphia, Justin popped the question as Caitlin obvliviously cracked jokes before finally realizing what what going on."
+    content: "As we picnicked in Washington Square Park, blocks away from where we first met in Philadelphia, Justin popped the question as Caitlin obliviously cracked jokes before finally realizing what what going on."
   },
   {
     imageFileName: "story/9.jpg",
