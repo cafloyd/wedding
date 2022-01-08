@@ -30,7 +30,7 @@ const Footer = ({ frontmatter }) => {
               >
                 Caitlin Floyd
               </a>
-              , 2021
+              , 2022
             </div>
             <div className="socials">
               {github ? <SocialIcons.Github className="footerSocial" userName={github} /> : null}
